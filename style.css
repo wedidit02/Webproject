@@ -1,9 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: "Poppins", sans-serif;
+}
+footer{
+    background-color: paleturquoise;
+    height: 10vh;
+    text-align: center;
+    
+}
 .head-tab{
     background-color: aqua;
-    border: solid 1px;
-    border-radius: 5px;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    padding: 1px;
+    float: left;
+    border: solid red;
+    border-radius: 50%;
 }
 .user-section-1{
     background-color: blueviolet;
+    
+}
+.site-name{
+    text-align: center;
+    
+    
+}
+.user-section-2{
+    background-color: rgb(114, 105, 98);
+    
+   
+}
+}
+.cartigory-section{
+    background-color: bisque;    
+}
+.cards{
+    background-color: olive;  
+}
+.cards-name{
+    border: solid red;
+      
+}
+button{
+}
+input{
+    width: 19vh;
+    margin-left: 50%;
 }
