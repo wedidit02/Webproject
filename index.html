@@ -12,46 +12,57 @@
   <title>Home</title>
 </head>
 <body>  
-  <header class="head-tab">
+  <header>
     <div class="logo">
       <img src="/logo/logo1.png" alt="logo"/>
     </div>
     <div class="site-name">
       <h1>On The Way Coming</h1>
     </div>
-  </header>
-  <main>
-    <section class="user-section-2">
-      <div>
-        <p>Email</p>
-        <input>
-        <p>Password</p>
-        <input >
-      </div>
-      <div>
-        <button>Signup</button>
-        <button>Login</button>
-      </div>
-    </section>
-    <div class="cartigory-section">
-      <div class="cards">
-        <div class="cards-name">
-          <div>
-            <h2>Games</h2>
-          </div>
-        </div>
-        <div class="cards-name">
-          <h2>Phone</h2>
-        </div>
-        <div class="cards-name">
-          <h2>Computers</h2>
-        </div>
-        <div class="cards-name">
-          <h2>Home</h2>
-        </div>
-      </div>
+    <div class="user-profile">
+      <img src="logo/user-profile.png">
     </div>
-  </main>  
+  </header>
+    <section>
+      <nav class="user-section-layout">
+        <ul>
+          <li>
+            <input type="text" placeholder="Email & user-name">
+          </li>
+          <li>
+            <input type="text" placeholder="Password">
+          </li>
+          
+        </ul>
+        <div>
+          <button>Signup</button>
+          <button>Login</button>
+        </div>
+      </nav>
+    
+      <article>
+          <div class="cards">
+            <div class="cards-name">
+              <div>
+                <img id="game" src="cartigory/games.jpeg" alt="games">
+                <label for="game">Game</label>
+              </div>
+            </div>
+            <div class="cards-name">
+              <img id="phone" src="cartigory/phones.jpeg" alt="phones">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="cards-name">
+              <img src="cartigory/computers.jpeg" alt="computers" id="computers">
+              <label for="Computers">Computers</label>
+            </div>
+            <div class="cards-name">
+              <img src="cartigory/home-appliances.jpeg" alt="home" id="home">
+              <label for="home">home-appliances</label>
+            </div>
+          </div>
+      </article>
+    </section>
     <footer>
       <h2>
         hello i am here
