@@ -31,8 +31,6 @@ footer{
 }
 .user-section-1{
     background-color: blueviolet;
-<<<<<<< HEAD
-    
 }
 .site-name{
     text-align: center;
@@ -44,7 +42,7 @@ footer{
     
    
 }
-}
+
 .cartigory-section{
     background-color: bisque;    
 }
@@ -55,14 +53,12 @@ footer{
     border: solid red;
       
 }
-button{
-}
+
 input{
     width: 19vh;
     margin-left: 50%;
 }
-=======
-}
+
 .SignUp-sec{
     text-align: center;
 }
@@ -125,4 +121,3 @@ input{
     width: 350px;
     margin-left: 0px;
 }
->>>>>>> 3bd136e3431b94453d18a9ddbabc35b5811ec28d
