@@ -1,12 +1,50 @@
-.head-tab{
-    background-color: aqua;
-    border: solid 1px;
-    border-radius: 5px;
-    padding: 5px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: rgb(13, 29, 82);
+    display: flex;
+    justify-content: start;
+    justify-content: space-between;
+    padding: 2px 2px 2px;
+    color: #fff;;
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    width: 10vh;
+    height: 10vh;
+    padding: 1px;
+    float: left;
+    border: solid red;
+    border-radius: 50%;
+}
+.site-name{
+    text-align: center;
+
+}
+.user-profile{
+    display: flex;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    border: solid white;
+    border-radius: 50%;
+}
+.home-layout{
+    display: -webkit-flex;
+    display: flex;    
 }
 .user-section-1{
     background-color: blueviolet;
 }
+<<<<<<< HEAD
 body
 {
     margin: 0;
@@ -24,6 +62,98 @@ body
     padding: 20px;
     margin: 8% auto;
     border-radius: 10px;
+=======
+section{
+    display: -webkit-flex;
+    display: flex; 
+    height: 80vh;
+}
+nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+    
+}
+nav ul{
+    list-style: none;
+    
+}
+nav div{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+nav input{
+    display: flex;
+   
+    align-content: center;
+    
+    
+    
+
+}
+article{
+    background-color: tomato;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.cartigory-section{
+    background-color: rgb(214, 156, 85);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    justify-content: center;    
+}
+.cards{
+    background-color: olive;
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-between;
+    
+    padding: 20px; 
+}
+.cards-name{
+    border: solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 100px;
+    height: 100px;      
+}
+article img{
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+}
+footer{
+    background-color: rgb(17, 36, 87);
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    
+    
+}
+
+.SignUp-sec{
+>>>>>>> ffb89c039a2dbc88772b386e8207bec453da512b
     text-align: center;
 }
 .signup-sec h1
@@ -71,6 +201,7 @@ body
     color: black;
 }
 .Boxes{
+<<<<<<< HEAD
     width: 250px;
     border-radius: 10px;
     padding: 10px;
@@ -110,3 +241,8 @@ hr{
 i{
     margin-top: -30px;
 }
+=======
+    width: 350px;
+    margin-left: 0px;
+}
+>>>>>>> ffb89c039a2dbc88772b386e8207bec453da512b
