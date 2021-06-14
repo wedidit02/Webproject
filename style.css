@@ -70,14 +70,24 @@ div input{
     width: 200px;
     height: 200px;
     border: solid royalblue;
+    color: saddlebrown;
 }
 div img{
     display: flex;
+    justify-content: center;
+    z-index: 2;
     width: 200px;
     height: 200px;
 
 }
-div label{}
+div label{
+    z-index: 1;
+    display: flex;
+    border: solid rosybrown;
+
+    justify-content:end;
+    
+}
 @media only screen and (max-width:920px) {
     .cartigory, .user-section {
         width: 100%;
@@ -91,66 +101,4 @@ div label{}
     .password, .login-but, .signup-but,.username{
         padding: 0px;
     }
-}
-.SignUp-sec{
-    text-align: center;
-}
-.text-FN{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -130px;
-}
-.text-Email{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -160px;
-}
-.text-P{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -130px;
-}
-.text-NB{
-    margin-top: 0.3px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -50px;
-}
-.text-CP{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -90px;
-}
-.Obl{
-    margin-top: 0.3px;
-    margin-bottom: 1px;
-    margin-right: 150px;
-    margin-left: -130px;
-}
-.buts{
-    margin-top: 0px;
-    padding: 50px;
-}
-.Terms{
-    margin-top: 50px;
-}
-.LB{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 100px;
-    margin-left: -300px;
-}
-.RB{
-    margin-top: 7px;
-    margin-bottom: 1px;
-    margin-right: -150px;
-    margin-left: 0px;
-}
-.Boxes{
-    width: 350px;
-    margin-left: 0px;
 }
