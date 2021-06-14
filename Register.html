@@ -18,36 +18,35 @@
           <button>Login</button>
         </div>
     </main>
-        <main class="SignUp-sec">
-            <div>
-                <h1>Signup</h1>
-                <p class="Obl">(*)Obligatory</p>
-            </div>
-            <div>
-                <p class="text-FN">Full Name *</p>
-                <input class="Boxes">
+        <div class="signup-sec">
+            <h1>Sign up</h1>
+            <form>
+                <small><p class="Obl">(*)Obligatory</p></small> 
+                <p class="text-FN">Name *</p>
+                <input type="name" class="Boxes" placeholder="Your full name">
                 <p class="text-Email">Email *</p>
-                <input class="Boxes">
+                <input type="email" class="Boxes" placeholder="eg@service.com">
                 <p class="text-P">Password *</p>
-                <input class="Boxes">
-                <div>
-                    <h6 class="text-NB">must contain at least 6 characters</h6>
-                <div>
-
-                <p class="text-CP">Confirm Password</p>
-                <input class="Boxes">
-            </div>
-            <div class="Terms">
-                <i>
-                    <small>I accept the Terms and Conditions</small> 
-                </i>
-            </div>    
-            <div class="buts">
-                <button class="LB">Login</button>
-                <button class="RB">Register</button>
-            </div>
-        </main>
-    
+                <input type="password" class="Boxes" placeholder="enter a strong password">
+                <p class="text-CP" >Confirm Password *</p>
+                <input style="confirm-password" class="Boxes" placeholder="enter your password again">
+                <div class="Terms">
+                    <i>
+                        <small>
+                        <p><span><input type="checkbox"></span>I accept the <a href="#">Terms and Conditions</a></p>
+                        </small> 
+                    </i>
+                </div>    
+                <button type="button" class="RB">Register</button>
+                <hr>
+                <h1 class="or">OR</h1>
+                <p class="opt-sign-up">Sign up using</p>
+                <button type="button" class="google">Google</button>
+                <button type="button" class="facebook">Facebook</button>
+                <p class="login">Already have an account? <a href="#">Login</a></p>
+            </form>
+        </div>    
+            
     
 </body>
 </html>
