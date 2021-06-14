@@ -7,9 +7,13 @@ body{
     font-family: "Poppins", sans-serif;
 }
 .site-header{
-    background-color: #e5e5e5;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 70px; 
+    background-color: rgb(88, 185, 161); 
+    padding-top: 5px; 
+    padding-left: 5px;
+    padding-bottom: 5px;  
 }
 .main-home{
     overflow: auto;
@@ -23,9 +27,11 @@ body{
     justify-content: space-around;
     padding: 40px 10px 10px 10px;
     background-color: rgb(190, 184, 184);
+    border-radius: 15px;
     float: left;
     width: 20%;
     height:fit-content;
+    margin: 20px;
     
 }
 div button{
@@ -34,7 +40,10 @@ div button{
     padding: 5px;
     border-radius: 5px;
     background-color: rgb(60, 77, 131);
-    color: #fff;;
+    color: #fff;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
 }
 div input{
     display: flex;
@@ -52,53 +61,156 @@ div input{
     justify-content: flex-end;
     padding-top: 20px;
     padding-right: 40px;
-    
 }
 
 .cartigory{
     display: flex;
+    flex:content;
+    justify-content: center;
+    padding-bottom: 20px;
     flex-flow: row wrap;
     float: left;
-    border: solid red;
-    width: 70%;    
+    width: 70%; 
+    margin: 20px; 
+    background-color: slategrey;
+    border-radius: 10px;
+    overflow: auto;    
 
 }
 .cards{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    width: 200px;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
     height: 200px;
-    border: solid royalblue;
+    border-radius: 15px;
     color: saddlebrown;
+    background-color: sandybrown;
+    margin-bottom: 5px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    float: left;
+   
+}
+.logo-img{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.site-name{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    float: left;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    
+}
+.user-profile{
+    width: 10%;
+    float: left;
+    
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 div img{
     display: flex;
     justify-content: center;
-    z-index: 2;
+    border-radius: 15px;
     width: 200px;
     height: 200px;
+    
 
 }
 div label{
-    z-index: 1;
     display: flex;
-    border: solid rosybrown;
-
-    justify-content:end;
-    
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+       
+}
+div main{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    font-style: bold;
 }
 @media only screen and (max-width:920px) {
-    .cartigory, .user-section {
+    .user-section {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        margin: 0px;
+        border-radius: 0px;
+        position: fixed;
+        margin-top: 70px;
+    }
+    .cartigory{
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
+        justify-content: center;
+        margin: 0px;
+        border-radius: 0px;
+        margin-top: 140px;
+    
     }
     div input{
         width: 200px;
+        height: 30;
+        margin: 5px;
     }
     .password, .login-but, .signup-but,.username{
         padding: 0px;
+    }
+    .signup-but{
+        margin-top: -30px;
+    }
+    .cards{
+        width: 100%;
+        border-radius: 0px;
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+    div main{
+        display: none;
+    }
+    div button{
+        width: 70px;
+        height: 30px;
+        margin-top: -70px;
+        margin-right: 40px;
+    
+    }
+    .user-profile{
+        display: none;
+    }
+    .site-header{
+        width: 100%;
+        position:fixed;
+        z-index: 2;
+    }
+    .main-home{
+        width: 100%;
+        
     }
 }
