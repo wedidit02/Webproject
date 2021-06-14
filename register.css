@@ -1,25 +1,53 @@
-header{
-    background-color: rgb(13, 29, 82);
+.site-header{
     display: flex;
-    justify-content: start;
-    justify-content: space-between;
-    padding: 2px 2px 2px;
-    color: #fff;;
-    height: 10vh;
+    justify-content: center;
+    height: 70px; 
+    background-color: rgb(88, 185, 161); 
+    padding-top: 5px; 
+    padding-left: 5px;
+    padding-bottom: 5px; 
 }
 .logo{
     display: flex;
-    justify-content: start;
-    width: 10vh;
-    height: 10vh;
-    padding: 1px;
+    justify-content: center;
+    width: 10%;
     float: left;
-    border: solid red;
+   
+}
+.logo-img{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    background-color: #fff;
 }
 .site-name{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    float: left;
+    align-items: center;
     text-align: center;
-
+    font-size: 10px;
+    
+}
+.user-profile{
+    width: 10%;
+    float: left;
+    
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+@media only screen and (max-width:920px ) {
+    .user-profile{
+        display: none;
+    }    
 }
 
 
