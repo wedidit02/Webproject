@@ -1,0 +1,126 @@
+header{
+    background-color: rgb(13, 29, 82);
+    display: flex;
+    justify-content: start;
+    justify-content: space-between;
+    padding: 2px 2px 2px;
+    color: #fff;;
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    width: 10vh;
+    height: 10vh;
+    padding: 1px;
+    float: left;
+    border: solid red;
+    border-radius: 50%;
+}
+.site-name{
+    text-align: center;
+
+}
+
+
+body{
+    font-family: sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    margin: 0px;
+}
+.signup-sec{
+    width: 300px;
+    height: 680px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 1% auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.signup-sec h1{
+    color: blue;
+}
+.text-FN{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: -210px;
+}
+.text-Email{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: -210px;
+}
+.text-P{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: -180px;
+}
+.text-CP{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: -120px;
+}
+.Obl{
+    margin-top: 0.3px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    margin-left: -190px;
+}
+.buts{
+    margin-top: 0px;
+    padding: 50px;
+}
+.Terms{
+    margin-top: 50px;
+}
+.RB{
+    color: black;
+}
+.Boxes{
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    width: 150px;
+    color: #999;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+}
+.google{
+    width: 80px;
+    background-color: rgb(67, 67, 197);
+    color: rgb(255, 255, 255);
+}
+.facebook{
+    width: 80px;
+    background-color: rgb(67, 67, 197);
+    color: rgb(255, 255, 255);
+}
+hr{
+    margin-top: 30px;
+    width: 80%;
+}
+.or{
+    background: #fff;
+    width: 50px;
+    margin-left: 125px;
+    margin-top: -20px;
+    font-size: 20px;
+}
+i{
+    margin-top: -30px;
+}
