@@ -1,18 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
 .site-header{
     display: flex;
     justify-content: center;
-    height: 70px; 
-    background-color: rgb(88, 185, 161); 
-    padding-top: 5px; 
+    height: 70px;
+    background-color: rgb(88, 185, 161);
+    padding-top: 5px;
     padding-left: 5px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 .logo{
     display: flex;
     justify-content: center;
     width: 10%;
     float: left;
-   
+
 }
 .logo-img{
     display: flex;
@@ -30,12 +38,13 @@
     align-items: center;
     text-align: center;
     font-size: 10px;
-    
+
 }
 .user-profile{
     width: 10%;
     float: left;
-    
+    display: none;
+
 }
 .profile-img{
     display: flex;
@@ -44,111 +53,123 @@
     height: 60px;
     border-radius: 50%;
 }
-@media only screen and (max-width:920px ) {
-    .user-profile{
-        display: none;
-    }    
-}
-
-
-body{
-    font-family: sans-serif;
-    background-image: url('background/background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 0px;
-    margin: 0px;
-}
 .signup-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 300px;
-    height: 680px;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    background: #fff;
+    height: fit-content;
+    background: rgb(88, 185, 161);
     padding: 20px;
     margin: 1% auto;
     border-radius: 10px;
     text-align: center;
 }
-.signup-sec h1{
-    color: blue;
+.input-sec{
+    text-align: left;
 }
-.text-FN{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 0px;
-    margin-left: -210px;
-}
-.text-Email{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 0px;
-    margin-left: -210px;
-}
-.text-P{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 0px;
-    margin-left: -180px;
-}
-.text-CP{
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-right: 0px;
-    margin-left: -120px;
-}
-.Obl{
-    margin-top: 0.3px;
-    margin-bottom: 1px;
-    margin-right: 0px;
-    margin-left: -190px;
-}
-.buts{
-    margin-top: 0px;
-    padding: 50px;
-}
-.Terms{
-    margin-top: 50px;
-}
-.RB{
-    color: black;
-}
-.Boxes{
-    width: 250px;
-    border-radius: 10px;
-    padding: 10px;
-    border: 1px solid #999;
-    outline: none;
-}
-button{
-    width: 150px;
-    color: #999;
+.boxes{
     border-radius: 20px;
-    padding: 10px;
-    border: 1px solid;
+    padding: 7px;
+    width: 95%;
+    margin-bottom: 20px;
     outline: none;
-    cursor: pointer;
+}
+.signup-home{
+    overflow: auto;
+}
+.signup-button{
+    border-radius: 20px;
+    width: 100px;
+    padding: 7px;
+    margin: 3% auto;
 }
 .google{
-    width: 80px;
-    background-color: rgb(67, 67, 197);
-    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100px;
+    padding: 7px;
+    margin-left: -150px;
+    margin-top: 10px;
 }
 .facebook{
-    width: 80px;
-    background-color: rgb(67, 67, 197);
-    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100px;
+    padding: 7px;
+    margin-right: -150px;
+    margin-top: 10px;
 }
 hr{
-    margin-top: 30px;
-    width: 80%;
+    margin: 5%;
 }
 .or{
-    background: #fff;
-    width: 50px;
-    margin-left: 125px;
-    margin-top: -20px;
-    font-size: 20px;
+    margin-top: -27px;
+    margin-left: 117px;
+    background: rgb(88, 185, 161);
+    width: 25px;
 }
-i{
-    margin-top: -30px;
+.login{
+    margin: 10% auto;
 }
+
+@media only screen and (max-width:620px ) {
+    
+    .site-header{
+        width: 100%;
+        position:fixed top;
+        z-index: 2;
+        border-bottom: solid black 1px;
+    }
+    .signup-sec{
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .input-sec{
+        text-align: left;
+    }
+    .boxes{
+        border-radius: 20px;
+        padding: 7px;
+        width: 95%;
+        margin-bottom: 20px;
+        outline: none;
+    }
+    .signup-home{
+        overflow: auto;
+        width: 100%;
+        background:rgb(88, 185, 161);
+    }
+    .signup-button{
+        border-radius: 20px;
+        width: 100px;
+        padding: 7px;
+        margin: 3% auto;
+    }
+    .google{
+        border-radius: 20px;
+        width: 100px;
+        padding: 7px;
+        margin-left: -150px;
+        margin-top: 10px;
+    }
+    .facebook{
+        border-radius: 20px;
+        width: 100px;
+        padding: 7px;
+        margin-right: -150px;
+        margin-top: 10px;
+    }
+    hr{
+        margin: 5%;
+    }
+    .or{
+        margin-top: -35px;
+        margin-left: 210px;
+        background: rgb(88, 185, 161);
+        width: 25px;
+        text-align: center;
+    }
+    .login{
+        margin: 10% auto;
+    }
+}}
