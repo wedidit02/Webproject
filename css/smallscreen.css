@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: "Poppins", sans-serif;
+    
 }
+
 .site-header{
     display: flex;
     justify-content: center;
@@ -15,18 +18,19 @@ body{
     padding-left: 5px;
     padding-bottom: 5px;  
 }
+
 .main-home{
-    overflow: auto;
-    width: 100%;
+    overflow: auto;   
     background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
 }
+
 .logo{
     display: flex;
     justify-content: center;
-    width: 10%;
-    float: left;
-   
+    width: 15%;
+    float: left;   
 }
+
 .logo-img{
     display: flex;
     justify-content: center;
@@ -35,21 +39,25 @@ body{
     border-radius: 50%;
     background-color: #fff;
 }
+
 .site-name{
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     float: left;
     align-items: center;
     text-align: center;
     font-size: 10px;
-    
 }
+
 .user-profile{
-    width: 10%;
-    float: left;
-    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15%;
+    float: left;    
 }
+
 .profile-img{
     display: flex;
     justify-content: center;
@@ -57,55 +65,63 @@ body{
     height: 60px;
     border-radius: 50%;
 }
+
 .user-section{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    float: left;
-    width: 30%;
-    background-color: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.3)
-      );
-    height: 80%;
-    padding: 20px;
-}
-.user-section span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    color: #fff;
-}
-.user-section form .row{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-}
-form .row .username{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
-    height: 100px;
+    height: 90px;
+    padding: 0px;
 }
+
+.user-section span{
+    display: none;
+    width: 0%;
+    height: 0%;
+}
+
+.user-section form .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 90px;
+    float: left;
+    padding: 0 10px;
+}
+
 form .row .username input{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 40px;
-    padding-left: 30px;
+    justify-content: center;
+    padding-left: 40px;
+    border-radius: 5px;
     border: none;
-    border-radius: 5px;    
+    width: 300px;
+    height: 30px;
 }
+
+form .row .username{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+form .row .username i{
+    position: absolute;
+    padding: 7px 0px 0px 10px;
+    background: chartreuse;
+    height: 30px;
+    width: 35px;
+    border-radius: 5px 0 0 5px;
+}
+
+form .row .username input{
+    display: flex;
+}
+
 form .row .username input:hover{
     background: linear-gradient(to right top, #c765df4d, #e9eb6c5b);
     border: 2px solid linear-gradient(to right top, #e9eb6c, #c765df);
@@ -113,47 +129,77 @@ form .row .username input:hover{
 form .row .username input:hover::placeholder{
     color: #fff;
 }
+
 .user-section form .button-row{
     display: flex;
     justify-content: center;
-    align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 70px;
-   
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90px;
+    float: left;
 }
+
 form .button-row button{
-    width: 80px;
-    height: 50px;
-    font-size: 20px;
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
     font-weight: 500;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 5px;    
 }
+
 form .button-row button:hover{
     background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3));
 }
-.main-home .cartigory{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-    width: 70%;
-    float: left;
-    border: solid blue;
-    
+.cartigory{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-.cartigory .cards{
+
+.cartigory *{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;   
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.cartigory * img{
     display: flex;
     justify-content: center;
-    
-    width: 200px;
+    align-items: center;
+    width: 100%; 
     height: 200px;
-    border: solid red;
-    
-    
+}
+
+.cartigory * label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.082),
+        rgb(255, 255, 255));;
+}
+
+.cartigory * label:hover{
+    background:linear-gradient(
+        to right bottom,
+        rgba(238, 238, 238, 0.7),
+        rgba(212, 156, 119, 0.5));
 }

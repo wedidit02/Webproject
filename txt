@@ -1,13 +1,10 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 body{
     font-family: "Poppins", sans-serif;
 }
 .main-home{
     overflow: auto;
+    width: 100%;
 }
 .user-section{
     display: flex;
@@ -19,6 +16,7 @@ body{
 .user-section span{
     display: none;
     width: 0%;
+    height: 0%;
 
 }
 .user-section form .row{
@@ -57,14 +55,17 @@ form .button-row button{
     font-weight: 100;
     
 }
-/* cartigory*/
+
 .cartigoty{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex: none;
+    width: 70%;
 }
 
 .cartigoty .cards{
+    
     width: 100%;
-    flex-direction:column;
+    border: solid rosybrown;
+}
+.cartigoty .cards img{
+    width: 100%;
 }
