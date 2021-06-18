@@ -80,7 +80,7 @@ body{
     width: 100%;
     height: 100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 500;
     color: #fff;
 }
@@ -95,16 +95,25 @@ form .row .username{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
+    position: relative;
+}
+form .row .username i{
+    position: absolute;
+    padding: 10px 0px 0px 10px;
+    background: chartreuse;
+    height: 2.5rem;
+    width: 2rem;
+    border-radius: 5px 0 0 5px;
 }
 form .row .username input{
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 40px;
-    padding-left: 30px;
+    padding-left: 40px;
     border: none;
     border-radius: 5px;    
 }
@@ -140,69 +149,61 @@ form .button-row button:hover{
     rgba(255, 255, 255, 0.3));
 }
 .cartigory{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+    padding-top: 3rem;
+    border: 0.1rem solid rgba(22, 22, 22, 0.774);
+    
+}
+.cartigory  .cards{
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+   flex-direction: column;
+    background-color: rgb(88, 185, 161);
+    border-radius: 0.5rem;
     position: relative;
+}
+.cartigory .cards-holder2 .cards2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.cartigory .cards img{
+    display: flex;
+
+    width: 15rem;
+    height: 14rem;
     
 }
-.cartigory > *{ 
-    border: solid red;
-    
-
+.cartigory .cards-holder2 .cards2 img{
+    display: flex;
+    width: 15rem;
+    height: 9.34rem;
 }
-
-.cards1{
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    height: 15rem;
-    
-}
-.cards2{
-    grid-column: 1/ span 2;
-    grid-row: 3;
-}
-.cards3{
-    grid-row: 2;
-    grid-column: 2;
-}
-.cards4{
-    grid-row: 3;
-    grid-column: 3;
-}
-.cards5{
-    grid-row: 2;
-    grid-column: 3 ;
-}
-.cards6{
-    grid-row: 1;
-    grid-column: 4;
-}
-.cards7{
-    grid-row: 2 / span 3;
-    grid-column: 4;
-}
-.cartigory> * img{
-    width: 100%;
-    height: 100%;
-    
-}
-
-
-.cartigory> * label{
+.cartigory .cards label, .cards2 label{
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
     color: #000;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: 500;
+    cursor: pointer;
     background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.082),
         rgb(255, 255, 255));;
 }
 
-.cartigory .cards label:hover{
+.cartigory .cards label:hover, .cards2 label:hover{
     background:linear-gradient(
         to right bottom,
         rgba(238, 238, 238, 0.7),
@@ -211,7 +212,7 @@ form .button-row button:hover{
 
 footer{
     display: flex;
-    height: 9vh;
+    height: 4vh;
     justify-content: center;
     background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
 }
