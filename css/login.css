@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+}
+
+.container{
+   max-width: 27.5rem;
+   padding: 0 1.25rem;
+   margin: 6rem auto;
+   
+}
+
+.container .wrapper{
+    width: 100%;
+    border: none;
+    border-radius: 0.3125rem;
+    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    box-shadow: outset 5px 5px 5px 5px rgba(26,188,156,0.25);
+}
+
+.wrapper .titel{
+    display: flex;
+    height: 5.625rem;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.wrapper form{
+    padding: 1.7rem 1.55rem 1.55rem 1.55rem;
+    
+
+}
+.wrapper form .row{
+   height: 2.8125rem;
+   margin-bottom: 0.9rem;
+   position: relative;
+   border: none;
+}
+
+.wrapper form .row input{
+    height: 100%;
+    width: 100%; 
+    outline: none;
+    padding-left: 3.3rem;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    border: none;
+    transition: all 0.3s ease;
+    
+}
+.wrapper form .row i{
+    position: absolute;
+    width: 2.9375rem;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: chartreuse;
+    border-radius: 0.3125rem 0 0 0.3125rem;
+}
+.wrapper form .forgot-pass{
+    margin: 0 0 1rem 0;
+}
+.wrapper form .forgot-pass a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+
+}
+.wrapper form .forgot-pass a:hover{
+    text-decoration: underline;
+}
+.wrapper form .button input{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 0rem;
+    border: none;
+    border-radius: 0.32rem;
+    cursor: pointer;
+    background: chartreuse;
+}
+.wrapper form .button input:hover{
+    background: aqua;
+}
+.wrapper form .signup-link{
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 1rem 0 0 3.7rem ;
+}
+.wrapper form .signup-link a{
+    text-decoration:none;
+    color: #fff;
+}
+.wrapper form .signup-link a:hover{
+    text-decoration:underline;
+}

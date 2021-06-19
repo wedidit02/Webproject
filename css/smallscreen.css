@@ -12,11 +12,11 @@ body{
 .site-header{
     display: flex;
     justify-content: center;
-    height: 70px; 
-    background-color: rgb(88, 185, 161); 
-    padding-top: 5px; 
-    padding-left: 5px;
-    padding-bottom: 5px;  
+    height: 3.75rem; 
+    background: #9df78798; 
+    padding-top: 0.3.125rem; 
+    padding-left: 0.3.125rem;
+    padding-bottom: 0.3.125rem;  
 }
 
 .main-home{
@@ -27,6 +27,7 @@ body{
 .logo{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 15%;
     float: left;   
 }
@@ -34,8 +35,8 @@ body{
 .logo-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -47,13 +48,16 @@ body{
     float: left;
     align-items: center;
     text-align: center;
-    font-size: 10px;
+    color: #fffeff;
+    font-size: 0.6rem;
+    font-weight: 500;
+
 }
 
 .user-profile{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 15%;
     float: left;    
 }
@@ -61,8 +65,8 @@ body{
 .profile-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
