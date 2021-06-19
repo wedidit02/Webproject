@@ -5,6 +5,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right  top, #247c026c, #7ddf65, #6c7febab, #c765df4d);
 }
 .site-header{
     display: flex;
@@ -59,7 +60,7 @@ body{
     justify-content: space-around;
     width: 300px;
     height: fit-content;
-    background: rgb(88, 185, 161);
+    background: linear-gradient(to right  top, #247c026c, #7ddf65, #6c7febab, #c765df4d);;
     padding: 20px;
     margin: 1% auto;
     border-radius: 10px;
