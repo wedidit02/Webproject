@@ -147,7 +147,7 @@ form .row .username input:hover::placeholder{
 }
 
 form .button-row button{
-    width: 3.125rem;
+    width: 3.7rem;
     height: 1.875rem;
     font-size: 0.9rem;
     font-weight: 600;
@@ -173,8 +173,8 @@ form .button-row button{
 form .button-row button:hover{
     background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3));
+    rgba(111, 248, 83, 0.7),
+    rgb(0, 245, 20));
 }
 
 .cartigory{

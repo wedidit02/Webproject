@@ -5,12 +5,10 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
 }
 
 .container{
-   max-width: 27.5rem;
-   padding: 0 1.25rem;
+   max-width: 25.5rem;
    margin: 6rem auto;
    
 }
@@ -18,12 +16,11 @@ body{
 .container .wrapper{
     width: 100%;
     border: none;
-    border-radius: 0.3125rem;
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    border: 0.1rem solid limegreen;
     box-shadow: outset 5px 5px 5px 5px rgba(26,188,156,0.25);
 }
 
-.wrapper .titel{
+.container .titel{
     display: flex;
     height: 5.625rem;
     width: 100%;
@@ -33,6 +30,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 0.3125rem 0.3125rem 0 0;
+    background: limegreen;
 }
 
 .wrapper form{
@@ -54,7 +52,7 @@ body{
     padding-left: 3.3rem;
     font-size: 1rem;
     border-radius: 0.3125rem;
-    border: none;
+    border: 0.1rem solid limegreen;
     transition: all 0.3s ease;
     
 }
@@ -66,7 +64,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: chartreuse;
+    background: limegreen;
     border-radius: 0.3125rem 0 0 0.3125rem;
 }
 .wrapper form .forgot-pass{
@@ -75,7 +73,7 @@ body{
 .wrapper form .forgot-pass a{
     text-decoration: none;
     font-size: 1.1rem;
-    color: #fff;
+    color: limegreen;
 
 }
 .wrapper form .forgot-pass a:hover{
@@ -88,20 +86,24 @@ body{
     border: none;
     border-radius: 0.32rem;
     cursor: pointer;
-    background: chartreuse;
+    background: limegreen;
+    color: #fff;
 }
 .wrapper form .button input:hover{
-    background: aqua;
+    background: rgb(154, 250, 145);
 }
-.wrapper form .signup-link{
+.container .signup-link{
     font-size: 1.1rem;
-    align-items: center;
-    padding: 1rem 0 0 3.7rem ;
+    text-align: center;
+    background: limegreen;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    width: 100%;
+    height: 2rem;
 }
-.wrapper form .signup-link a{
+.container .signup-link a{
     text-decoration:none;
     color: #fff;
 }
-.wrapper form .signup-link a:hover{
+.container .signup-link a:hover{
     text-decoration:underline;
 }
