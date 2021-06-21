@@ -27,41 +27,46 @@
     </div>
   </div> 
 
-  <div class="sinup-home">
+  <div class="signup-home">
+    <main  class="signup-header">
+      <div>Sign Up</div>
+    </main>
     <div class="signup-sec">
-      <main>
-        <h1 class="signup-header">Sign Up</h1>
-      </main>
-      <table>
+      <form action="#">
         <div class="input-sec">
           <div>Name<small style="color:red">*</small></div>
           <input type="name" class="boxes" placeholder="Enter your full name" required>
           <div>Username</div>
           <input type="username" class="boxes" placeholder="Enter a username">
           <div>Email<small style="color:red">*</small></div>
-          <input type="email" class="boxes" placeholder="eg@service.com">
+          <input type="email" class="boxes" placeholder="eg@service.com" required>
           <div>Password<small style="color:red">*</small></div>
-          <input type="password" class="boxes" placeholder="Enter a strong password">
+          <input type="password" class="boxes" placeholder="Enter a strong password" minlength="6" required>
           <div>Confirm Password<small style="color:red">*</small></div>
-          <input type="password" class="boxes" placeholder="Confirm your password">
+          <input type="password" class="boxes" placeholder="Confirm your password" required>
         </div>
-      </table>
-      <div class="terms">
-        <i>
-          <small><span><input type="checkbox"></span> I accept the <a href="#">Terms and Conditions</a></small>
-        </i>
+      
+        <div class="terms">
+          <i>
+            <span><input type="checkbox" required> I accept the </span> <a href="#">Terms and Conditions</a>
+          </i>
+        </div>
+        <div class="signup-button">
+          <button type="submit">SignUp</button>
+        </div>
+      </form>
+      
+      
+      <div class="or">
+        <hr>
+        <p>OR</p>
       </div>
-      <div>
-        <button type="submit" class="signup-button">SignUp</button>
+      <div class="fg-buts">
+        <button type="button">Google</button>
+        <button type="button">Facebook</button>
       </div>
-      <hr>
-      <p class="or">OR</p>
-      <div>
-        <button type="button" class="google">Google</button>
-        <button type="button" class="facebook">Facebook</button>
-      </div>
-      <div>
-        <p class="login">Already have an account? <a href="login.html">Login</a></p>
+      <div class="login"> 
+        <p >Already have an account? <a href="login.html">Login</a></p>
       </div>
     </div> 
   </div>
