@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: center;
     height: 3.75rem; 
-    background: lawngreen; 
+    background: limegreen; 
     padding-top: 0.3.125rem; 
     padding-left: 0.3.125rem;
     padding-bottom: 0.3.125rem;  
@@ -98,16 +98,18 @@ body{
 form .row .username input{
     display: flex;
     justify-content: center;
+    outline: none;
     padding-left: 40px;
     border-radius: 5px;
-    border: 0.1rem solid lawngreen;
+    border: 0.1rem solid limegreen;
     width: 18.75rem;
     height: 1.875rem;
+    transition: all 0.3s ease;
 }
 
 form .row input:focus{
-    border-color: #16a085;
-    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+    border-color: 0.1rem limegreen;
+    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
 }
 form .row .username{
     display: flex;
@@ -120,7 +122,7 @@ form .row .username{
 form .row .username i{
     position: absolute;
     padding: 7px 0px 0px 10px;
-    background: lawngreen;
+    background: limegreen;
     color: #fff;
     height: 1.875rem;
     width: 2.1875rem;
@@ -153,7 +155,7 @@ form .button-row button{
     font-weight: 600;
     border: none;
     border-radius: 0.3125rem;
-    background: lawngreen;
+    background: limegreen;
     color: #fff;    
 }
 .user-wrapper .forgot{
@@ -162,7 +164,7 @@ form .button-row button{
 }
 .user-wrapper .forgot a{
     text-decoration: none;
-    color: lawngreen;
+    color: limegreen;
     font-size: 1rem;
     font-weight: 500;
 }
