@@ -69,6 +69,7 @@ form .row input:focus{
     justify-content: center;
     background: limegreen;
     border-radius: 0.3125rem 0 0 0.3125rem;
+    color: #fff;
 }
 .wrapper form .forgot-pass{
     margin: 0 0 1rem 0;
