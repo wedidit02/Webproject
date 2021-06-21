@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+   max-width: 25.5rem;
+   margin: 6rem auto;
+}
+
+.container .wrapper{
+    width: 100%;
+    border: none;
+    border: 0.1rem solid limegreen;
+    
+}
+
+.container .titel{
+    display: flex;
+    height: 5.625rem;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3125rem 0.3125rem 0 0;
+    background: limegreen;
+}
+
+.wrapper form{
+    padding: 1.7rem 1.55rem 1.55rem 1.55rem;
+    
+
+}
+.wrapper form .row{
+   height: 2.8125rem;
+   margin-bottom: 0.9rem;
+   position: relative;
+   border: none;
+}
+
+.wrapper form .row input{
+    height: 100%;
+    width: 100%; 
+    outline: none;
+    padding-left: 3.3rem;
+    font-size: 1rem;
+    border-radius: 0.3125rem;
+    border: 0.1rem solid limegreen;
+    transition: all 0.3s ease;
+    
+}
+form .row input:focus{
+    border-color: 0.1rem limegreen;
+    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
+}
+.wrapper form .row i{
+    position: absolute;
+    width: 2.9375rem;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: limegreen;
+    border-radius: 0.3125rem 0 0 0.3125rem;
+    color: #fff;
+}
+.wrapper form .forgot-pass{
+    margin: 0 0 1rem 0;
+}
+.wrapper form .forgot-pass a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: limegreen;
+
+}
+.wrapper form .forgot-pass a:hover{
+    text-decoration: underline;
+}
+.wrapper form .button input{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 0rem;
+    border: none;
+    border-radius: 0.32rem;
+    cursor: pointer;
+    background: limegreen;
+    color: #fff;
+}
+.wrapper form .button input:hover{
+    background: rgb(154, 250, 145);
+}
+.container .signup-link{
+    font-size: 1.1rem;
+    text-align: center;
+    background: limegreen;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    width: 100%;
+    height: 2rem;
+}
+.container .signup-link a{
+    text-decoration:none;
+    color: #fff;
+}
+.container .signup-link a:hover{
+    text-decoration:underline;
+}

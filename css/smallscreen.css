@@ -12,21 +12,21 @@ body{
 .site-header{
     display: flex;
     justify-content: center;
-    height: 70px; 
-    background-color: rgb(88, 185, 161); 
-    padding-top: 5px; 
-    padding-left: 5px;
-    padding-bottom: 5px;  
+    height: 3.75rem; 
+    background: limegreen; 
+    padding-top: 0.3.125rem; 
+    padding-left: 0.3.125rem;
+    padding-bottom: 0.3.125rem;  
 }
 
 .main-home{
-    overflow: auto;   
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    overflow: auto;
 }
 
 .logo{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 15%;
     float: left;   
 }
@@ -34,8 +34,8 @@ body{
 .logo-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -47,13 +47,16 @@ body{
     float: left;
     align-items: center;
     text-align: center;
-    font-size: 10px;
+    color: #fffeff;
+    font-size: 0.6rem;
+    font-weight: 500;
+
 }
 
 .user-profile{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 15%;
     float: left;    
 }
@@ -61,8 +64,8 @@ body{
 .profile-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -75,7 +78,7 @@ body{
     padding: 0px;
 }
 
-.user-section span{
+.user-wrapper span{
     display: none;
     width: 0%;
     height: 0%;
@@ -95,39 +98,43 @@ body{
 form .row .username input{
     display: flex;
     justify-content: center;
+    outline: none;
     padding-left: 40px;
     border-radius: 5px;
-    border: none;
-    width: 300px;
-    height: 30px;
+    border: 0.1rem solid limegreen;
+    width: 18.75rem;
+    height: 1.875rem;
+    transition: all 0.3s ease;
 }
 
+form .row input:focus{
+    border-color: 0.1rem limegreen;
+    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
+}
 form .row .username{
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
+    
 }
 
 form .row .username i{
     position: absolute;
     padding: 7px 0px 0px 10px;
-    background: chartreuse;
-    height: 30px;
-    width: 35px;
+    background: limegreen;
+    color: #fff;
+    height: 1.875rem;
+    width: 2.1875rem;
     border-radius: 5px 0 0 5px;
 }
 
-form .row .username input{
-    display: flex;
-}
-
 form .row .username input:hover{
-    background: linear-gradient(to right top, #c765df4d, #e9eb6c5b);
-    border: 2px solid linear-gradient(to right top, #e9eb6c, #c765df);
+    background: rgb(220, 241, 220);
+    
 }
 form .row .username input:hover::placeholder{
-    color: #fff;
+    color: rgb(92, 90, 90);
 }
 
 .user-section form .button-row{
@@ -137,31 +144,46 @@ form .row .username input:hover::placeholder{
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 90px;
+    height: 5.625rem;
     float: left;
 }
 
 form .button-row button{
-    width: 50px;
-    height: 30px;
-    font-size: 15px;
-    font-weight: 500;
+    width: 3.7rem;
+    height: 1.875rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;    
+    border-radius: 0.3125rem;
+    background: limegreen;
+    color: #fff;    
+}
+.user-wrapper .forgot{
+    width: fit-content;
+    margin-left: 60%;
+}
+.user-wrapper .forgot a{
+    text-decoration: none;
+    color: limegreen;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.user-wrapper .forgot a:hover{
+    text-decoration: underline;
 }
 
 form .button-row button:hover{
     background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3));
+    rgba(111, 248, 83, 0.7),
+    rgb(0, 245, 20));
 }
 
 .cartigory{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 76vh;
     padding: 0px;
 }
 
@@ -193,8 +215,8 @@ form .button-row button:hover{
     cursor: pointer;
     background: linear-gradient(
         to right bottom,
-        rgba(255, 255, 255, 0.226),
-        rgba(255, 254, 254, 0.966));;
+        rgba(178, 253, 196, 0.226),
+        rgb(137, 253, 108));;
 }
 
 .cartigory .cards label:hover, .cards2 label:hover{

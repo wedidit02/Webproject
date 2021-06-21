@@ -11,15 +11,16 @@ body{
     display: flex;
     justify-content: center;
     height: 70px; 
-    background-color: rgb(88, 185, 161); 
-    padding-top: 5px; 
-    padding-left: 5px;
-    padding-bottom: 5px;  
+    background:limegreen; 
+    padding-top: 0.3125rem; 
+    padding-left: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    color: #fff;
+      
 }
 .main-home{
     overflow: auto;
-   
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    height: 85vh;
 }
 .logo{
     display: flex;
@@ -31,8 +32,9 @@ body{
 .logo-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -43,7 +45,8 @@ body{
     float: left;
     align-items: center;
     text-align: center;
-    font-size: 10px;
+    font-size: 1rem;
+    font-weight: 500;
     
 }
 .user-profile{
@@ -54,35 +57,40 @@ body{
 .profile-img{
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
-.user-section{
+.user-wrapper{
+    
+    float: left;
+    width: 30%;
+    
+    height: 30rem;
+    margin: 2.35rem 0 0 0.5rem; 
+    border-radius: 0.5rem;   
+}
+.user-wrapper .user-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    float: left;
-    width: 25%;
-    background-color: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.3)
-      );
-    height: 80%;
-    padding: 20px;
-    
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    border: 0.1rem solid limegreen;   
 }
-.user-section span{
+.user-wrapper span{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 8rem;
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
     color: #fff;
+    background: limegreen;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 .user-section form .row{
     width: 100%;
@@ -90,6 +98,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 form .row .username{
     display: flex;
@@ -103,7 +112,8 @@ form .row .username{
 form .row .username i{
     position: absolute;
     padding: 10px 0px 0px 10px;
-    background: chartreuse;
+    background: limegreen;
+    color: #fff;
     height: 2.5rem;
     width: 2rem;
     border-radius: 5px 0 0 5px;
@@ -111,18 +121,24 @@ form .row .username i{
 form .row .username input{
     display: flex;
     justify-content: space-around;
+    outline: none;
     width: 100%;
     height: 40px;
     padding-left: 40px;
-    border: none;
-    border-radius: 5px;    
+    border: 0.1rem solid limegreen;
+    border-radius: 5px; 
+    transition: all 0.3s ease;   
+}
+form .row input:focus{
+    border-color: 0.1rem limegreen;
+    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
 }
 form .row .username input:hover{
-    background: linear-gradient(to right top, #c765df4d, #e9eb6c5b);
+    background: #e7fce25b;
     border: 2px solid linear-gradient(to right top, #e9eb6c, #c765df);
 }
 form .row .username input:hover::placeholder{
-    color: #fff;
+    color: rgb(179, 179, 179);
 }
 .user-section form .button-row{
     display: flex;
@@ -130,53 +146,72 @@ form .row .username input:hover::placeholder{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
    
 }
 form .button-row button{
-    width: 80px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 500;
+    width: 5rem;
+    height: 3.125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
+    background: limegreen;
+    color: #fff;
 }
 form .button-row button:hover{
-    background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3));
+    background: lightgreen;
+}
+.user-wrapper .forgot{
+    border: 0.1rem solid limegreen;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    background: limegreen;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.user-wrapper .forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+.user-wrapper .forgot a:hover{
+    text-decoration: underline;
+}
+.form{
+    display: flex;
+    justify-content: center;
 }
 .cartigory{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 85vh;
-    padding-top: 3rem;
-    border: 0.1rem solid rgba(22, 22, 22, 0.774);
+    margin: 3rem 0 0 0;
+    padding: 0.35rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: limegreen;
     
 }
 .cartigory  .cards{
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
-   flex-direction: column;
-    background-color: rgb(88, 185, 161);
-    border-radius: 0.5rem;
+    flex-direction: column;
     position: relative;
+    
 }
 .cartigory .cards-holder2 .cards2{
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
     flex-direction: column;
-    border-radius: 0.5rem;
     position: relative;
 }
 .cartigory .cards img{
     display: flex;
-
+    border-radius: 0.5rem;
     width: 15rem;
     height: 14rem;
     
@@ -199,8 +234,8 @@ form .button-row button:hover{
     cursor: pointer;
     background: linear-gradient(
         to right bottom,
-        rgba(255, 255, 255, 0.082),
-        rgb(255, 255, 255));;
+        rgba(161, 247, 144, 0.082),
+        rgb(119, 240, 89));;
 }
 
 .cartigory .cards label:hover, .cards2 label:hover{
@@ -214,5 +249,6 @@ footer{
     display: flex;
     height: 4vh;
     justify-content: center;
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    background: limegreen;
+    color: #fff;
 }
