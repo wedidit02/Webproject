@@ -35,6 +35,9 @@ body{
     text-align: left;
     color: black;
 }
+.input-sec input{
+    transition: all 0.3s ease;
+}
 .boxes{
     border-radius: 0.3125rem;
     padding: 7px;
