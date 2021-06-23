@@ -42,15 +42,43 @@ body{
 
 .site-name{
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 70%;
     float: left;
-    align-items: center;
+    padding: 0.5rem;
     text-align: center;
     color: #fffeff;
-    font-size: 0.6rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 600;
 
+}
+nav{
+    width: 70%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0.5rem;    
+}
+nav .nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    margin: 5px;   
+}
+nav .nav-links li{
+    width: 2.7rem;
+    margin-left: 0.5rem;
+    background: #3131316c;
+    text-align: center;
+    border-radius: 0.3125rem;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+   
+    font-size: 0.6rem;
 }
 
 .user-profile{
@@ -229,5 +257,5 @@ footer{
     display: flex;
     height: 4vh;
     justify-content: center;
-    background: linear-gradient(to right  top, #90eb6c6c, #7ddf65, #6c7febab, #c765df4d);
+    background: limegreen;
 }
