@@ -19,9 +19,7 @@ body{
     padding-bottom: 0.3.125rem;  
 }
 
-.main-home{
-    overflow: auto;
-}
+
 
 .logo{
     display: flex;
@@ -96,7 +94,54 @@ nav ul li a{
     height: 3rem;
     border-radius: 50%;
 }
-
+/* search contaniner */
+#search-contaniner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0.2rem;
+}
+#search-contaniner span{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+#search-contaniner input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 0.3125rem 0 0 0.3125rem ;
+    padding: 0 0.35rem;
+    font-size: 1rem;
+    border: 0.1rem solid limegreen;
+    outline: none;
+}
+#search-contaniner input:hover{
+    background: rgb(220, 241, 220);
+}
+#search-contaniner input:focus{
+    border-color: 0.1rem limegreen;
+    box-shadow: inset 2px 0px 0px 2px rgba(50, 205, 50, 0.199);
+}
+#search-contaniner .search-btn{
+    width: 10%;
+    height: 2rem;
+    background: limegreen;
+    border: none;
+    border-radius: 0 0.3125rem 0.3125rem 0 ;
+    
+}
+#search-contaniner .search-btn i{
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#search-contaniner .search-btn i:hover{
+    color:#000;
+}
+/* login contaniner */
+.main-home{
+    overflow: auto;
+}
 .user-section{
     display: flex;
     justify-content: space-evenly;
@@ -186,9 +231,24 @@ form .button-row button{
     background: limegreen;
     color: #fff;    
 }
+form .button-row button:hover{
+    background: linear-gradient(
+    to right bottom,
+    rgba(111, 248, 83, 0.7),
+    rgb(0, 245, 20));
+}
+
+/*forgot password*/
+.user-wrapper section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0;
+    width: 100%;
+}
 .user-wrapper .forgot{
-    width: fit-content;
-    margin-left: 60%;
+    width: 35%;
+    text-align: center;
 }
 .user-wrapper .forgot a{
     text-decoration: none;
@@ -200,13 +260,48 @@ form .button-row button{
     text-decoration: underline;
 }
 
-form .button-row button:hover{
-    background: linear-gradient(
-    to right bottom,
-    rgba(111, 248, 83, 0.7),
-    rgb(0, 245, 20));
+/*lohin with facebook or google*/
+.user-wrapper .fg{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    list-style: none;
+}
+.user-wrapper .fg li button{
+    width: 5.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+.user-wrapper .fg .facebook button{
+    border: 0.1rem solid #4267B2;
+    background: #4267B2;
+}
+.user-wrapper .fg .google button{
+    background: #DB4437;
+    border: solid 0.1rem #DB4437
+}
+.user-wrapper .fg li button:hover{
+    background: #fff;
+}
+.user-wrapper .fg li button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.user-wrapper .fg .google button i:hover{
+    color: #DB4437;
+}
+.user-wrapper .fg .facebook button i:hover{
+    color: #4267B2;
 }
 
+/* cartigory contaniner */
 .cartigory{
     display: flex;
     flex-direction: column;
