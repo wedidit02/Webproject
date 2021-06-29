@@ -46,7 +46,7 @@ body{
     
 }
 
-/* search contaniner */
+/* search container */
 #search-inHeader{
     display: flex;
     align-content: center;
@@ -124,7 +124,7 @@ nav ul li a{
     border-radius: 50%;
 }
 
-/* search contaniner */
+/* search container */
 .search-contaniner{
     display: flex;
     justify-content: flex-end;
@@ -155,13 +155,13 @@ nav ul li a{
     border-radius: 0 0.3125rem 0.3125rem 0 ;
 }
 
-/* wrapper for login and cartigory contaniner */
+/* wrapper for login and cartigory container */
 .main-home{
     overflow: auto;
     height: 86.7vh;
 }
 
-/* ligin contaniner */
+/* login contaniner */
 .user-wrapper{
     float: left;
     width: 30%;
@@ -261,7 +261,7 @@ form .button-row button:hover{
     background: lightgreen;
 }
 
-/*lohin with facebook or google*/
+/*login with facebook or google*/
 .user-wrapper .fg{
     display: flex;
     justify-content: space-evenly;

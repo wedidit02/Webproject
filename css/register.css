@@ -25,6 +25,10 @@ body{
     background:  limegreen;
     
 }
+#search-inHeader{
+    display: none;
+}
+
 .signup-header div{
     font-size: 2rem;
     font-weight: 600;
