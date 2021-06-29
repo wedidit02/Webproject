@@ -1,126 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" async defer></script>
+    <link rel="stylesheet" href="css/login.css"/>
     <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/widescreen.css" />
     <link rel="stylesheet" media="screen and (max-width: 899px)" href="css/smallscreen.css" />
-    
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <title>Home</title>
-  </head>
-  <body>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet"/>
+    <title>Reception</title>
+</head>
+<body>
     <div class="site-header">
-      <div class="logo">
-        <img class="logo-img" src="logo/logo1.png" alt="logo">
-      </div>
-      <div class="site-name">
-        name of site
-      </div>
-      <div id="search-inHeader"></div>
-      <nav>
-				<ul class="nav-links">
-					<li><a class="nav-link" href="#">Home</a></li>
-					<li><a class="nav-link" href="#">Contact</a></li>
-					<li><a class="nav-link" href="#">About</a></li>
-				</ul>
-			</nav>
-      <div class="user-profile">
-        <img src="logo/profile1.jpeg" alt="user-profile" class="profile-img">
-      </div>
-    </div> 
-    <div id="search-contaniner">
-    </div>
-    <div class="main-home">
-      <div class="user-wrapper">
-        <div>
-            <span>
-                Login here
-            </span>
+        <div class="logo">
+            <a href="index.html">
+              <img class="logo-img" src="logo/logo1.png" alt="logo">
+            </a>
         </div>
-        <div class="user-section">
-          <form accept="#">
-              <div class="row">
-                <div class="username">
-                  <i class="fas fa-user"></i>
-                  <input type="email or text" placeholder="Email Or Username" required>
-                </div>
-                <div class="username">
-                  <i class="fas fa-lock"></i>
-                  <input type="password" placeholder="Password" required>
-                </div>
-            </div>
-            <div class="button-row">
-              <div class="login-but">
-              <button type="submit">Login</button>
-              </div>
-              <div class="signup-but">
-                <a href="register.html">
-                <button type="button">Signup</button>
-                </a>
-              </div>
-            </div>
-          </form>
+        <div class="site-name">
+            name of site
         </div>
-        <section>
-            <ul class="fg">
-            <li class="facebook"><button><i class="fab fa-facebook-f"></i></button></li>
-              <li class="google"><button><i class="fab fa-google"></i></button></li>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
             </ul>
-            <div class="forgot">
-              <a href="forgot.html">Forgot password?</a>
-            </div>
-        </section>
-        
-      </div>
-      
-      <div class="form">
-        <div class="cartigory">
-          <div class="crads-holder1">
-            <div class="cards">
-              <img id="home" src="cartigory/home-appliances.jpeg" alt="home-appliances">
-              <label for="home">Home-appliances</label>
-            </div>
-            <div class="cards">
-              <img id="phone" src="cartigory/phones.jpeg" alt="phones">
-              <label for="phone">phones</label>
-            </div>
-          </div>
-          <div class="cards-holder2">
-            <div class="cards2">
-              <img src="cartigory/games.jpeg" alt="games" id="game">
-              <label for="game">Games</label>
-            </div>
-            <div class="cards2">
-                <img src="cartigory/fashion.jpeg" alt="fashion" id="fashion">
-                <label for="fashion">Fashion</label>
-            </div>
-            <div class="cards2">
-              <img src="cartigory/computers.jpeg" alt="computers" id="computer">
-              <label fro="computer">Computers</label>
-            </div>
-          </div>
-          <div class="crads-holder">
-            <div class="cards">
-              <img src="cartigory/accessories.jpeg" alt="accessories" id="accessories">
-              <label for="accessories">Accessories</label>
-            </div>
-            <div class="cards">
-              <img src="cartigory/housing.jpeg" alt="housing" id="housing">
-              <label for="housing">Housing</label>
-            </div>
-          </div>
+        </nav>
+        <div class="user-profile">
+          <img src="logo/profile1.jpeg" alt="user-profile" class="profile-img">
         </div>
-      </div>
+    </div> 
+    <div class="container">
+        <div class="col">
+            <div class="titel"><span>Login</span></div>
+            <div class="wrapper">
+                <form action="#">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <input type="text/email" placeholder="Email or Username" required>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="forgot-pass"><a href="forgot.html">Forgot password?</a></div>
+                    <div class="row button">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="signup-link">Not a member? <a href="register.html">Create account</a></div>
+        </div>
+        <div class="col">
+            <img src="images/image1.png">
+        </div>
     </div>
     <footer>
-      <span>hello am here</span>
-    </footer> 
-    <script defer src="./javaScript.js"></script>
-  </body>
- 
+        <span>i'm here</span>
+    </footer>
+</body>
 </html>
