@@ -8,8 +8,16 @@ body{
 }
 
 .container{
-   max-width: 25.5rem;
-   margin: 6rem auto;
+    float: left;
+    align-items: center;
+    margin: 3rem 0 3rem 1rem;
+}
+
+
+.col img{
+    max-width: 70%;
+    margin: 3rem 2rem 9rem 2rem;
+
 }
 
 .container .wrapper{
