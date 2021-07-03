@@ -22,26 +22,14 @@ body{
 
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15%;
-    float: left;   
-}
+    display: none;
 
-.logo-img{
-    display: flex;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: #fff;
 }
 
 .site-name{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
     float: left;
     padding: 0.5rem;
     text-align: center;
@@ -94,138 +82,161 @@ nav ul li a{
     height: 3rem;
     border-radius: 50%;
 }
-/* search contaniner */
-#search-contaniner{
+
+/* cartigory selecter */
+.cartigory-list-menu{
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding-top: 0.2rem;
+    align-items: center;
+    width: 25%;
+    float: left;
+    pointer-events: 0;
+      
 }
-#search-contaniner span{
+.cartigory-list-menu button{
     display: flex;
-    justify-content: center;
-    width: 90%;
-}
-#search-contaniner input{
-    width: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
     height: 2rem;
-    border-radius: 0.3125rem 0 0 0.3125rem ;
-    padding: 0 0.35rem;
-    font-size: 1rem;
-    border: 0.1rem solid limegreen;
-    outline: none;
-}
-#search-contaniner input:hover{
-    background: rgb(220, 241, 220);
-}
-#search-contaniner input:focus{
-    border-color: 0.1rem limegreen;
-    box-shadow: inset 2px 0px 0px 2px rgba(50, 205, 50, 0.199);
-}
-#search-contaniner .search-btn{
-    width: 10%;
-    height: 2rem;
-    background: limegreen;
+    background: none;
     border: none;
-    border-radius: 0 0.3125rem 0.3125rem 0 ;
-    
-}
-#search-contaniner .search-btn i{
-    color: #fff;
-    font-size: 1rem;
     cursor: pointer;
 }
-#search-contaniner .search-btn i:hover{
-    color:#000;
+
+.cartigory-list-menu .line{
+    width: 1.5rem;
+    height: 0.1rem;
+    background: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+
 }
-/* login contaniner */
+.cartigory-list-title{
+    align-items: center;    
+    font-size: 0.8rem;
+    width: 100%;
+    height: 2rem;
+    background:limegreen;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-bottom: 0.1rem solid #fff;
+    padding: 1.5rem 0;
+    border-radius: 0 0.5rem  0 0;   
+}
+
+.cartigory-list-wrapper{
+    border-radius: 0 0.5rem  0.5rem 0;
+    background: limegreen;
+    position: absolute;
+    width: 60%;
+    height: 88vh;
+     background: rgb(202, 238, 202);
+    transition: all 0.3s ease-out;
+    transform: translateX(-18.8rem);   
+}
+.cartigory-list-wrapper.open{
+    display: block;
+    transform: translateX(0px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cartigory-selecter{
+    width: 100%;
+    height: 77vh;
+    overflow: auto;
+}
+.cartigory-selecter button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid limegreen;
+    background: #fff;
+    
+}
+.cartigory-selecter button span{
+    display: none;
+
+    
+}
+.cartigory-selecter .home.list, .phone.list,
+.computer.list, .game.list , .fashion.list,
+.housing.list, .accessorie.list{
+    background: limegreen;
+}
+.cartigory-selecter .home.list span, .phone.list span,
+.computer.list span, .game.list span, .fashion.list span,
+.housing.list span, .accessorie.list span{
+    display: block;
+}
+.cartigory-selecter .home.list i, .phone.list i,
+.computer.list i, .game.list i, .fashion.list i,
+.housing.list i, .accessorie.list i{
+    display: none;
+}
+.cartigory-selecter .home.list + ul, .phone.list  + ul,
+.computer.list + ul, .game.list + ul, .fashion.list  + ul,
+.housing.list + ul, .accessorie.list + ul{
+    display: block;
+    
+}
+
+.cartigory-selecter ul{
+    border-bottom: 0.1rem solid limegreen;
+    display: none;
+}
+
+.cartigory-selecter ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;    
+    border: none;
+    text-align: center;
+    height: 2rem;
+}
+.cartigory-selecter ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* login container */
 .main-home{
     overflow: auto;
 }
 .user-section{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
-    height: 90px;
-    padding: 0px;
-}
-
-.user-wrapper span{
-    display: none;
-    width: 0%;
-    height: 0%;
-}
-
-.user-section form .row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    width: 70%;
-    height: 90px;
-    float: left;
-    padding: 0 10px;
-}
-
-form .row .username input{
-    display: flex;
-    justify-content: center;
-    outline: none;
-    padding-left: 40px;
-    border-radius: 5px;
-    border: 0.1rem solid limegreen;
-    width: 18.75rem;
-    height: 1.875rem;
-    transition: all 0.3s ease;
-}
-
-form .row input:focus{
-    border-color: 0.1rem limegreen;
-    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
-}
-form .row .username{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    
-}
-
-form .row .username i{
-    position: absolute;
-    padding: 7px 0px 0px 10px;
     background: limegreen;
-    color: #fff;
-    height: 1.875rem;
-    width: 2.1875rem;
-    border-radius: 5px 0 0 5px;
-}
-
-form .row .username input:hover{
-    background: rgb(220, 241, 220);
-    
-}
-form .row .username input:hover::placeholder{
-    color: rgb(92, 90, 90);
+    border-top: 0.1rem solid #000;
 }
 
 .user-section form .button-row{
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;    
     align-items: center;
-    width: 30%;
-    height: 5.625rem;
-    float: left;
+    margin-right:1.5rem ;
+    width: 100%;    
 }
 
 form .button-row button{
     width: 3.7rem;
     height: 1.875rem;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     border-radius: 0.3125rem;
     background: limegreen;
@@ -238,119 +249,47 @@ form .button-row button:hover{
     rgb(0, 245, 20));
 }
 
-/*forgot password*/
-.user-wrapper section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem 0;
-    width: 100%;
-}
-.user-wrapper .forgot{
-    width: 35%;
-    text-align: center;
-}
-.user-wrapper .forgot a{
-    text-decoration: none;
-    color: limegreen;
-    font-size: 1rem;
-    font-weight: 500;
-}
-.user-wrapper .forgot a:hover{
-    text-decoration: underline;
-}
-
-/*lohin with facebook or google*/
-.user-wrapper .fg{
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    list-style: none;
-}
-.user-wrapper .fg li button{
-    width: 5.5rem;
-    height: 2rem;
-    border: none;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-}
-.user-wrapper .fg .facebook button{
-    border: 0.1rem solid #4267B2;
-    background: #4267B2;
-}
-.user-wrapper .fg .google button{
-    background: #DB4437;
-    border: solid 0.1rem #DB4437
-}
-.user-wrapper .fg li button:hover{
-    background: #fff;
-}
-.user-wrapper .fg li button i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
-.user-wrapper .fg .google button i:hover{
-    color: #DB4437;
-}
-.user-wrapper .fg .facebook button i:hover{
-    color: #4267B2;
-}
-
 /* cartigory contaniner */
 .cartigory{
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 76vh;
-    padding: 0px;
-}
-
-.cards, .cards2{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    position: relative;
-}
-.cards img, .cards2 img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 10rem;
+    padding: 0 0.3rem;
     
 }
-.cards label, .cards2 label{
-    position: absolute;
+.cartigory .cards-container{
+    margin: 0.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 5.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: rgb(2, 2, 2);
-    cursor: pointer;
-    background: linear-gradient(
-        to right bottom,
-        rgba(178, 253, 196, 0.226),
-        rgb(137, 253, 108));;
+    background: rgba(144, 238, 144, 0.178);
+    border-radius: 0.3rem;
+   
 }
-
-.cartigory .cards label:hover, .cards2 label:hover{
-    background:linear-gradient(
-        to right bottom,
-        rgba(238, 238, 238, 0.7),
-        rgba(212, 156, 119, 0.5));
+.cards-container .cartigory-img{
+    padding: 0.2rem;
+    width: 50%;
+    height: 100%;
+    
+}
+.cards-container .cartigory-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cartigory .cards {
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.cartigory .cards h3{
+    justify-content: flex-end;
 }
 footer{
     display: flex;
-    height: 4vh;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
     justify-content: center;
     background: limegreen;
 }
