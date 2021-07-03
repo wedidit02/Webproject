@@ -7,21 +7,15 @@ body{
     font-family: "Poppins", sans-serif;
     
 }
-.main-home{
-    overflow: auto;
-    height: 86.7vh;
-}
 .site-header{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 60px; 
+    height: 9vh; 
     background:limegreen; 
     padding-top: 0.3125rem; 
     padding-left: 0.3125rem;
     padding-bottom: 0.3125rem;
-    
-      
 }
 
 .logo{
@@ -42,7 +36,7 @@ body{
 }
 .site-name{
     display: flex;
-    width: 45%;
+    width: 25%;
     float: left;
     align-items: center;
     text-align: center;
@@ -51,8 +45,18 @@ body{
     color: #fff;
     
 }
-nav{
+
+/* search container */
+#search-inHeader{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
     width: 45%;
+    
+}
+
+nav{
+    width: 20%;
     float: left;
     display: flex;
     justify-content: flex-end;
@@ -70,7 +74,6 @@ nav .nav-links li{
     background: #3131316c;
     text-align: center;
     border-radius: 0.3125rem;
-    
 }
 nav ul li a{
     text-decoration: none;
@@ -80,7 +83,6 @@ nav ul li a{
 .user-profile{
     width: 5%;
     float: left;
-    
 }
 .profile-img{
     display: flex;
@@ -90,100 +92,127 @@ nav ul li a{
     height: 3rem;
     border-radius: 50%;
 }
-.user-wrapper{
-    
+/* cartigory wrapper */
+.cartigory-list-menu{
+    display: none;
+}
+.cartigory-list-wrapper{
+    margin-top: 0.5rem;
     float: left;
-    width: 30%;
-    
-    height: 30rem;
-    margin: 2.35rem 0 0 0.5rem; 
-    border-radius: 0.5rem;   
+    width: 17%;
+    height: 86.7vh;
+    padding: 0.05rem;
+    border-radius: 0.3125rem 0.3125rem 0.3125rem 0;
+    background: rgba(144, 238, 144, 0.178);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.user-wrapper .user-section{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 20rem;
-    padding: 1rem;
-    border: 0.1rem solid limegreen;   
-}
-.user-wrapper span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8rem;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 500;
-    color: #fff;
+.cartigory-list-title{
+    font-size: 1rem;
+    width: 100;
+    height: 3rem;
     background: limegreen;
-    border-radius: 0.5rem 0.5rem 0 0;
-}
-.user-section form .row{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-form .row .username{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    border-radius: 0.3125rem 0.3125rem 0 0;
+    border-bottom: 0.1rem solid #fff;
+}
+.cartigory-list{
+    height: 79.6vh;
+    overflow: auto;
+}
+.cartigory-list .cartigory-selecter{
+    width: 100%;
+    display: block;
+}
+
+.cartigory-selecter button{
+    display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
-    position: relative;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid limegreen;
+    background: #fff;
 }
-form .row .username i{
-    position: absolute;
-    padding: 10px 0px 0px 10px;
+.cartigory-selecter button:hover, ul li:hover{
+    background: lightgreen;
+}
+.cartigory-selecter button.list{
     background: limegreen;
-    color: #fff;
-    height: 2.5rem;
-    width: 2rem;
-    border-radius: 5px 0 0 5px;
 }
-form .row .username input{
-    display: flex;
-    justify-content: space-around;
-    outline: none;
+.cartigory-selecter button:focus + ul{
+    border-bottom:0.1rem solid limegreen ;
+
+}
+.cartigory-selecter button.list span{
+    display: block;
+}
+.cartigory-selecter button span{
+    display: none;
+}
+.cartigory-selecter button.list i{
+    display: none;
+}
+.cartigory-selecter button.list + ul{
+    display: block;
+    transform: translateY(0px);
+}
+.cartigory-selecter ul{
+    text-align: center;
+    display: none;
+    border: none;
     width: 100%;
-    height: 40px;
-    padding-left: 40px;
-    border: 0.1rem solid limegreen;
-    border-radius: 5px; 
-    transition: all 0.3s ease;   
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
 }
-form .row input:focus{
-    border-color: 0.1rem limegreen;
-    box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
+.cartigory-selecter ul li{
+    width: 100%;
+    height: 2rem;
+    
 }
-form .row .username input:hover{
-    background: #e7fce25b;
-    border: 2px solid linear-gradient(to right top, #e9eb6c, #c765df);
-}
-form .row .username input:hover::placeholder{
-    color: rgb(179, 179, 179);
-}
-.user-section form .button-row{
+.cartigory-selecter ul li a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+/* wrapper for login and cartigory container */
+.main-home{
+    overflow: auto;
+    height: 89vh;
+}
+
+/* login contaniner */
+.user-section{
+    display: flex;
     width: 100%;
-    height: 4.375rem;
-   
+    justify-content: flex-end;
+}
+
+.user-section form .button-row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem
+    
 }
 form .button-row button{
-    width: 5rem;
-    height: 3.125rem;
+    width: 7rem;
+    margin-right:0.5rem ;
     font-size: 1.25rem;
     font-weight: 600;
-    border: none;
     border-radius: 0.3125rem;
+    border: none;    
     cursor: pointer;
     background: limegreen;
     color: #fff;
@@ -191,88 +220,42 @@ form .button-row button{
 form .button-row button:hover{
     background: lightgreen;
 }
-.user-wrapper .forgot{
-    border: 0.1rem solid limegreen;
-    width: 100%;
-    height: 2rem;
-    border-radius: 0 0 0.5rem 0.5rem;
-    text-align: center;
-    background: limegreen;
-    font-size: 1rem;
-    font-weight: 600;
-}
-.user-wrapper .forgot a{
-    text-decoration: none;
-    color: #fff;
-}
-.user-wrapper .forgot a:hover{
-    text-decoration: underline;
-}
-.form{
-    display: flex;
-    justify-content: center;
-}
+
+/* cartigory contaniner */
 .cartigory{
+    margin: 0rem 1.45rem;
     display: flex;
-    flex-wrap: wrap;
-    margin: 3rem 0 0 0;
-    padding: 0.35rem;
-    border: none;
-    border-radius: 0.5rem;
-    background: limegreen;
-    
+    flex-wrap: wrap;   
 }
-.cartigory  .cards{
+.cartigory .cards-container{
+    margin: 0.5rem 0.7rem;
     display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
     flex-direction: column;
-    position: relative;
-    
+    width: 192px;
+    height: 15rem;
+    background: rgba(144, 238, 144, 0.178);
+    border-radius: 0.3rem;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.cartigory .cards-holder2 .cards2{
-    display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
-    flex-direction: column;
-    position: relative;
-}
-.cartigory .cards img{
-    display: flex;
-    border-radius: 0.5rem;
-    width: 15rem;
-    height: 14rem;
-    
-}
-.cartigory .cards-holder2 .cards2 img{
-    display: flex;
-    width: 15rem;
-    height: 9.34rem;
-}
-.cartigory .cards label, .cards2 label{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cards-container .cartigory-img{
+    padding: 0.2rem;
     width: 100%;
-    height: 3rem;
-    color: #000;
-    font-size: 100%;
-    font-weight: 500;
-    cursor: pointer;
-    background: linear-gradient(
-        to right bottom,
-        rgba(161, 247, 144, 0.082),
-        rgb(119, 240, 89));;
+    height: 100%;
+    
 }
-
-.cartigory .cards label:hover, .cards2 label:hover{
-    background:linear-gradient(
-        to right bottom,
-        rgba(238, 238, 238, 0.7),
-        rgba(212, 156, 119, 0.5));
+.cards-container .cartigory-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
 }
-
+.cartigory .cards {
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.cartigory .cards h3{
+    justify-content: flex-end;
+}
 footer{
     display: flex;
     height: 4vh;

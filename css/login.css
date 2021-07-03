@@ -1,25 +1,32 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body{
-    font-family: "Poppins", sans-serif;
+#search-inHeader{
+    display: none;
 }
 
-.container{
-   max-width: 25.5rem;
-   margin: 6rem auto;
+.main-container{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    height: 86.7vh;
+    align-items: center;
 }
 
-.container .wrapper{
+.main-container .container{
+    max-width: 30%;
+    float: left;
+
+}
+
+
+.main-container .container .wrapper{
     width: 100%;
     border: none;
     border: 0.1rem solid limegreen;
-    
+
 }
 
-.container .titel{
+.main-container .container .title1{
     display: flex;
     height: 5.625rem;
     width: 100%;
@@ -32,34 +39,34 @@ body{
     background: limegreen;
 }
 
-.wrapper form{
+.main-container .wrapper form{
     padding: 1.7rem 1.55rem 1.55rem 1.55rem;
-    
+
 
 }
-.wrapper form .row{
+.main-container .wrapper form .row{
    height: 2.8125rem;
    margin-bottom: 0.9rem;
    position: relative;
    border: none;
 }
 
-.wrapper form .row input{
+.main-container .wrapper form .row input{
     height: 100%;
-    width: 100%; 
+    width: 100%;
     outline: none;
     padding-left: 3.3rem;
     font-size: 1rem;
     border-radius: 0.3125rem;
     border: 0.1rem solid limegreen;
     transition: all 0.3s ease;
-    
+
 }
-form .row input:focus{
+.main-container form .row input:focus{
     border-color: 0.1rem limegreen;
     box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
 }
-.wrapper form .row i{
+.main-container .wrapper form .row i{
     position: absolute;
     width: 2.9375rem;
     height: 100%;
@@ -71,19 +78,19 @@ form .row input:focus{
     border-radius: 0.3125rem 0 0 0.3125rem;
     color: #fff;
 }
-.wrapper form .forgot-pass{
+.main-container .wrapper form .forgot-pass{
     margin: 0 0 1rem 0;
 }
-.wrapper form .forgot-pass a{
+.main-container .wrapper form .forgot-pass a{
     text-decoration: none;
     font-size: 1.1rem;
     color: limegreen;
 
 }
-.wrapper form .forgot-pass a:hover{
+.main-container .wrapper form .forgot-pass a:hover{
     text-decoration: underline;
 }
-.wrapper form .button input{
+.main-container .wrapper form .button input{
     font-size: 1.5rem;
     font-weight: 400;
     padding-left: 0rem;
@@ -93,10 +100,10 @@ form .row input:focus{
     background: limegreen;
     color: #fff;
 }
-.wrapper form .button input:hover{
+.main-container .wrapper form .button input:hover{
     background: rgb(154, 250, 145);
 }
-.container .signup-link{
+.main-container .container .signup-link{
     font-size: 1.1rem;
     text-align: center;
     background: limegreen;
@@ -104,10 +111,82 @@ form .row input:focus{
     width: 100%;
     height: 2rem;
 }
-.container .signup-link a{
+.main-container .container .signup-link a{
     text-decoration:none;
     color: #fff;
 }
-.container .signup-link a:hover{
+.main-container .container .signup-link a:hover{
     text-decoration:underline;
+}
+
+.main-container .container-image{
+    width: 70%;
+    height: 100%;
+}
+.main-container .col{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0;
+}
+.main-container .col img{
+    width: 100%;
+    height: inherit;
+}
+
+/*lohin with facebook or google*/
+.wrapper .fg{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+.wrapper .fg li button{
+    width: 5.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+.wrapper .fg .facebook button{
+    border: 0.1rem solid #4267B2;
+    background: #4267B2;
+}
+.wrapper .fg .google button{
+    background: #DB4437;
+    border: solid 0.1rem #DB4437
+}
+.wrapper .fg li button:hover{
+    background: #fff;
+}
+.wrapper .fg li button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.wrapper .fg .google button i:hover{
+    color: #DB4437;
+}
+.wrapper .fg .facebook button i:hover{
+    color: #4267B2;
+}
+@media only screen and (max-width:700px){
+    .main-container .container{
+        max-width: 100%;
+        position:absolute;
+        z-index: 1;
+    }
+    .main-container .container .wrapper{
+        background: rgba(58, 58, 57, 0.781);
+    }
+    .main-container .container-image{
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+
+
 }
