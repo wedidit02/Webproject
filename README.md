@@ -1,2 +1,2 @@
-# Webproject
-wob project
+# Web Store Project
+web project
