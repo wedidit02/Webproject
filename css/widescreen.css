@@ -9,10 +9,10 @@ body{
 }
 /* colors */
 .color-navbar{
-  background-color: #39A2DB;
+  background: #39A2DB;
 }
 .color-navbar2{
-  background-color:#A2DBFA;
+  background:#A2DBFA;
 }
 .color-btn{
   background: #053742;

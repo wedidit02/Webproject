@@ -15,14 +15,15 @@
 .main-container .container{
     max-width: 30%;
     float: left;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.3125rem;
 }
 
 
 .main-container .container .wrapper{
     width: 100%;
     border: none;
-    border: 0.1rem solid limegreen;
+    border: 0.1rem solid #A2DBFA;
 
 }
 
@@ -36,7 +37,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.3125rem 0.3125rem 0 0;
-    background: limegreen;
+    
 }
 
 .main-container .wrapper form{
@@ -58,12 +59,12 @@
     padding-left: 3.3rem;
     font-size: 1rem;
     border-radius: 0.3125rem;
-    border: 0.1rem solid limegreen;
+    border: 0.1rem solid #A2DBFA;
     transition: all 0.3s ease;
 
 }
 .main-container form .row input:focus{
-    border-color: 0.1rem limegreen;
+    border-color: 0.1rem #A2DBFA;
     box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
 }
 .main-container .wrapper form .row i{
@@ -74,7 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: limegreen;
+    background: #A2DBFA;
     border-radius: 0.3125rem 0 0 0.3125rem;
     color: #fff;
 }
@@ -84,7 +85,7 @@
 .main-container .wrapper form .forgot-pass a{
     text-decoration: none;
     font-size: 1.1rem;
-    color: limegreen;
+    color: #39A2DB;
 
 }
 .main-container .wrapper form .forgot-pass a:hover{
@@ -97,16 +98,16 @@
     border: none;
     border-radius: 0.32rem;
     cursor: pointer;
-    background: limegreen;
+    background: #39A2DB;
     color: #fff;
 }
 .main-container .wrapper form .button input:hover{
-    background: rgb(154, 250, 145);
+    background: #A2DBFA;
 }
 .main-container .container .signup-link{
     font-size: 1.1rem;
     text-align: center;
-    background: limegreen;
+    background: #39A2DB;
     border-radius: 0 0 0.3125rem 0.3125rem;
     width: 100%;
     height: 2rem;
