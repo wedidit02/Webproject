@@ -1,0 +1,48 @@
+
+.prof-pg{
+    margin: 5rem 15rem 0;
+    text-align: left;
+}
+.prof-hd{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+.prof-img{
+    width: 10rem;
+    border-radius: 50%;
+    margin: 3rem 0 1rem;
+}
+.prof-form{
+    text-align: center;
+    
+}
+.prof-name{
+    margin-bottom: 30px;
+}
+.box{
+    margin-left: 5px;
+    width: 50%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 0.1rem #39A2DB solid;
+}
+.prof-email{
+    margin-bottom: 30px;
+}
+.box-e{
+    margin-left: 38px;
+    width: 50%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 0.1rem #39A2DB solid;
+}
+.prof-fp a{
+    margin: 3rem; 
+    text-decoration: none;
+    color: #39A2DB;  
+}
+.prof-fp:hover{
+    text-decoration: underline;
+}
