@@ -7,6 +7,14 @@
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+<<<<<<< HEAD
+/* colors */
+.color-navbar{
+  background: #39A2DB;
+}
+.color-navbar2{
+  background:#A2DBFA;
+=======
 
 h1, h2, h3, h4, h5, h6 {
   margin: auto 0;
@@ -26,6 +34,7 @@ ul{
 
 .color-navbar2 {
   background-color: #A2DBFA;
+>>>>>>> 888867d558372b130f0361ff53384f28da8dba4a
 }
 
 .color-btn {
