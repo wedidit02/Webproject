@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.site-header{
+    display: flex;
+    justify-content: center;
+    height: 3.75rem;
+    background: #7C83FD;
+    z-index: 2;
+    position: relative;
+}
+.logo{
+    display: none;
+}
+.site-name{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    float: left;
+    padding: 0.5rem;
+    text-align: center;
+    color: #fffeff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+nav{
+    width: 70%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0.5rem;
+}
+nav .nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+nav .nav-links li{
+    width: 2.7rem;
+    margin-left: 0.5rem;
+    background: #3131316c;
+    text-align: center;
+    border-radius: 0.3125rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6rem;
+}
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    float: left;
+    cursor: pointer;
+    margin-right: 0.5rem;
+
+}
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.profile-menu{
+    position: absolute;
+    z-index: 0;
+    background: rgb(240, 255, 240);
+    right: 5px;
+    top: 62px;
+    width: 12rem;
+    height: 23.3rem;
+    border-radius: 00.5rem;
+    box-shadow: 0px  5px 5px rgba(61, 75, 63, 0.185), 0px 5px 5px rgba(43, 44, 40, 0.26) ;
+    transition: all 0.4s ease-out;
+    transform: translateY(-22rem);
+    opacity: 0;
+}
+.profile-menu.user-menu{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.profile-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.profile-menu ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3.3rem;
+    border-bottom: 0.1rem solid limegreen;
+
+}
+/* cartigory selecter */
+.cartigory-list-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    float: left;
+    pointer-events: 0;
+}
+.cartigory-list-menu button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.cartigory-list-menu .line{
+    width: 1.5rem;
+    height: 0.1rem;
+    background: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.cartigory-list-title{
+    align-items: center;
+
+    width: 100%;
+    height: 2rem;
+    background:limegreen;
+
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 0.1rem solid #fff;
+    padding: 1.5rem 0;
+    border-radius: 0 0.5rem  0 0;
+}
+.cartigory-list-title h2{
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+.cartigory-list-title button{
+    margin-right: -20px;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.cartigory-list-wrapper{
+    border-radius: 0 0.5rem  0.5rem 0;
+    background: limegreen;
+    position: absolute;
+    width: 60%;
+    height: 88vh;
+    background: rgb(202, 238, 202);
+    transition: all 0.3s ease-out;
+    transform: translateX(-18.8rem);
+    opacity: 0;
+    top: 62px;
+}
+.cartigory-list-wrapper.open{
+    transform: translateX(0px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+}
+.cartigory-selecter{
+    width: 100%;
+    height: 77vh;
+    overflow: auto;
+}
+.cartigory-selecter button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid limegreen;
+    background: #fff;
+}
+.cartigory-selecter button span{
+    display: none;
+}
+.cartigory-selecter .home.list, .phone.list,
+.computer.list, .game.list , .fashion.list,
+.housing.list, .accessorie.list{
+    background: limegreen;
+}
+.cartigory-selecter .home.list span, .phone.list span,
+.computer.list span, .game.list span, .fashion.list span,
+.housing.list span, .accessorie.list span{
+    display: block;
+}
+.cartigory-selecter .home.list i, .phone.list i,
+.computer.list i, .game.list i, .fashion.list i,
+.housing.list i, .accessorie.list i{
+    display: none;
+}
+.cartigory-selecter .home.list + ul, .phone.list  + ul,
+.computer.list + ul, .game.list + ul, .fashion.list  + ul,
+.housing.list + ul, .accessorie.list + ul{
+    display: block;
+}
+.cartigory-selecter ul{
+    border-bottom: 0.1rem solid limegreen;
+    display: none;
+}
+.cartigory-selecter ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: none;
+    text-align: center;
+    height: 2rem;
+}
+.cartigory-selecter ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* login container */
+.main-home{
+    overflow: auto;
+}
+.user-section{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background: #96BAFF;
+    border-top: 0.1rem solid #000;
+}
+.user-section form .button-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:1.5rem ;
+    width: 100%;
+}
+form .button-row button{
+    width: 3.7rem;
+    height: 1.875rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.3125rem;
+    background: limegreen;
+    color: #fff;
+}
+form .button-row button:hover{
+    background: linear-gradient(
+    to right bottom,
+    rgba(111, 248, 83, 0.7),
+    rgb(0, 245, 20));
+}
+/* cartigory contaniner */
+.cartigory{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.3rem;
+}
+.cartigory .cards-container{
+    margin: 0.5rem;
+    display: flex;
+    width: 100%;
+    background: rgba(144, 238, 144, 0.178);
+    border-radius: 0.3rem;
+}
+.cards-container .cartigory-img{
+    padding: 0.2rem;
+    width: 50%;
+    height: 100%;
+}
+.cards-container .cartigory-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cartigory .cards {
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.cartigory .cards h3{
+    justify-content: flex-end;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: limegreen;
+}
