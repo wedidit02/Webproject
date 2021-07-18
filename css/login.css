@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.main-container .container{
+.container{
     max-width: 30%;
     float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -20,14 +20,14 @@
 }
 
 
-.main-container .container .wrapper{
+.wrapper{
     width: 100%;
     border: none;
     border: 0.1rem solid #A2DBFA;
 
 }
 
-.main-container .container .title1{
+.title1{
     display: flex;
     height: 5.625rem;
     width: 100%;
@@ -40,19 +40,19 @@
     
 }
 
-.main-container .wrapper form{
+.wrapper form{
     padding: 1.7rem 1.55rem 1.55rem 1.55rem;
 
 
 }
-.main-container .wrapper form .row{
+.row{
    height: 2.8125rem;
    margin-bottom: 0.9rem;
    position: relative;
    border: none;
 }
 
-.main-container .wrapper form .row input{
+.row input{
     height: 100%;
     width: 100%;
     outline: none;
@@ -63,11 +63,11 @@
     transition: all 0.3s ease;
 
 }
-.main-container form .row input:focus{
+.row input:focus{
     border-color: 0.1rem #A2DBFA;
     box-shadow: inset 0px 0px 2px 2px rgba(50, 205, 50, 0.199);
 }
-.main-container .wrapper form .row i{
+form .row i{
     position: absolute;
     width: 2.9375rem;
     height: 100%;
@@ -77,21 +77,21 @@
     justify-content: center;
     background: #A2DBFA;
     border-radius: 0.3125rem 0 0 0.3125rem;
-    color: #fff;
+    color: #053742;
 }
-.main-container .wrapper form .forgot-pass{
+.forgot-pass{
     margin: 0 0 1rem 0;
 }
-.main-container .wrapper form .forgot-pass a{
+.forgot-pass a{
     text-decoration: none;
     font-size: 1.1rem;
     color: #39A2DB;
 
 }
-.main-container .wrapper form .forgot-pass a:hover{
+.forgot-pass a:hover{
     text-decoration: underline;
 }
-.main-container .wrapper form .button input{
+.button input{
     font-size: 1.5rem;
     font-weight: 400;
     padding-left: 0rem;
@@ -101,10 +101,10 @@
     background: #39A2DB;
     color: #fff;
 }
-.main-container .wrapper form .button input:hover{
+.button input:hover{
     background: #A2DBFA;
 }
-.main-container .container .signup-link{
+.signup-link{
     font-size: 1.1rem;
     text-align: center;
     background: #39A2DB;
@@ -113,54 +113,54 @@
     height: 2rem;
     padding-top: 3px;
 }
-.main-container .container .signup-link a{
+.signup-link a{
     text-decoration:none;
     color: #fff;
 }
-.main-container .container .signup-link a:hover{
+.signup-link a:hover{
     text-decoration:underline;
 }
 
-.main-container .container-image{
+.container-image{
     width: 70%;
     height: 100%;
 }
-.main-container .col{
+.col{
     width: 100%;
     height: 100%;
     padding: 0.5rem 0;
 }
-.main-container .col img{
+.col img{
     width: 100%;
     height: inherit;
 }
 
-/*lohin with facebook or google*/
-.wrapper .fg{
+/*login with facebook or google*/
+.fg{
     display: flex;
     justify-content: space-between;
     width: 100%;
     list-style: none;
 }
-.wrapper .fg li button{
+.fg li button{
     width: 5.5rem;
     height: 2rem;
     border: none;
     border-radius: 0.3125rem;
     cursor: pointer;
 }
-.wrapper .fg .facebook button{
+.facebook button{
     border: 0.1rem solid #4267B2;
     background: #4267B2;
 }
-.wrapper .fg .google button{
+.google button{
     background: #DB4437;
     border: solid 0.1rem #DB4437
 }
-.wrapper .fg li button:hover{
+.fg li button:hover{
     background: #fff;
 }
-.wrapper .fg li button i{
+.fg li button i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,22 +169,22 @@
     width: 100%;
     height: 100%;
 }
-.wrapper .fg .google button i:hover{
+.google button i:hover{
     color: #DB4437;
 }
-.wrapper .fg .facebook button i:hover{
+.facebook button i:hover{
     color: #4267B2;
 }
 @media only screen and (max-width:700px){
-    .main-container .container{
+    .container{
         max-width: 100%;
         position:absolute;
         z-index: 1;
     }
-    .main-container .container .wrapper{
+    .wrapper{
         background: rgba(58, 58, 57, 0.781);
     }
-    .main-container .container-image{
+    .container-image{
         width: 100%;
         position: relative;
         z-index: 0;
