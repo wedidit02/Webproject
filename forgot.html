@@ -13,48 +13,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
 
   <!-- Local css -->
-  <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/widescreen.css" />
   <link rel="stylesheet" media="screen and (max-width: 899px)" href="css/smallscreen.css" />
+  <link rel="stylesheet" href="css/user-profile.css">
+  <link rel="stylesheet" href="css/forget.css">
 
   <title>Forgot Password</title>
 </head>
 
 <body>
-  <div class="site-header">
-    <div class="logo">
-      <a href="index.html">
-        <img class="logo-img" src="logo/logo1.png" alt="logo">
-      </a>
-    </div>
-    <div class="site-name">
-      name of site
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="#">Home</a></li>
-        <li><a class="nav-link" href="#">Contact</a></li>
-        <li><a class="nav-link" href="#">About</a></li>
-      </ul>
+  <!-- navigation bar -->
+  <section id="title">
+
+    <nav class="navbar color-navbar">
+      <!-- site name -->
+      <a class="nav-brand" href="index.html">site name</a>
     </nav>
-    <div class="user-profile">
-      <img src="logo/profile1.jpeg" alt="user-profile" class="profile-img">
-    </div>
-  </div>
-  <div class="container">
-    <div class="titel"><span>Forget Password</span></div>
+    <!--start of profile-->
+  <div class="prof-pg">
+    <div class="prof-hd color-navbar"><span>Forget Password</span></div>
     <div class="wrapper">
+      <p class="fp-dir">Please confirm your email to reset your password.</p>
       <form action="#">
         <div class="row">
-          <i class="fas fa-user"></i>
-          <input type="email" placeholder="Email" required>
+          <input class="row-input" type="email" placeholder="Email" required>
         </div>
-        <div class="row button">
+        <div class="row-button">
           <input type="submit" value="Request">
         </div>
       </form>
     </div>
-    <div class="signup-link">Not a menber? <a href="register.html">Create account</a></div>
+    <div class="signup-link">Not a member? <a href="register.html">Create account</a></div>
   </div>
   <footer>
     <span>i'm here</span>
