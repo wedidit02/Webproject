@@ -5,16 +5,22 @@
   box-sizing: border-box;
 }
 
+a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: auto 0;
+button{
+  cursor: pointer;
 }
 
-a{
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  margin: auto 0;
 }
 
 ul{
@@ -45,6 +51,7 @@ ul{
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 3rem;
+  z-index: 5;
 }
 
 .menu{
@@ -112,15 +119,17 @@ ul{
   text-decoration: underline;
 }
 
+/* profile */
 .user-profile {
   margin-left: 1.5rem;
   position: relative;
+  z-index: 2;
 }
-.user-profile:focus + .profile-container {
-  display: block;
+
+.user-img {
+  background-color: transparent;
+  border: none;
 }
-/* .user-img {
-} */
 
 .profile-img {
   border-radius: 50%;
@@ -129,23 +138,49 @@ ul{
 }
 
 .profile-settings {
-  border: solid;
-  background: #fff;
-  display: none;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 20rem;
+  line-height: 2;
   top:70px;
+  transition: all 0.3s ease-out;
+  transform: translateY(-22px);
   right: 10px;
   position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 0;
+
 }
+.toggle-user-menu {
+  transform: translateY(0px);
+  opacity: 1;
+  z-index: 3;
+}
+
 .user-name{
+  align-items: center;
   color: #fff;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
   padding: 0.5rem;
-  height: 2.5rem;
 }
 
 .profile-list {
-  padding: 0.5rem;
-  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.25rem auto;;
+
+}
+.profile-list li{
+  padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+
+}
+.profile-list li:hover{
+  background-color: #A2DBFA;
+
 }
 
 /* product cartigory */
@@ -153,8 +188,10 @@ ul{
  display: flex;
  justify-content: space-between;
  padding: 0.5rem 3rem;
+
 }
 
+/* for phone smallscreen */
 .cartigory-wrapper-phone{
   display: none;
 }
@@ -162,6 +199,8 @@ ul{
 .cartigory-wrapper{
   display: flex;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .cartigory-items{
@@ -215,29 +254,19 @@ ul{
   display: block;
 }
 
-/* .item-list:hover > .cartigory-item button{
-  background-color: #053742;
-  color: #fff;
-} */
-
-
 /* product cards */
-.product-container{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-}
-
 .cards-container{
   display: flex;
   flex-wrap: wrap;
-  margin: 2.5rem 2rem 0.5rem 2rem;
+  justify-content: space-between;
+  padding: 2.5rem 2rem 0.5rem 2rem;
+  position: relative;
+  z-index:
 }
 
 .cards-item{
   border-radius: 0.3rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
   width: 12rem;
   height: 15rem;
   padding: 0.5rem;
@@ -251,7 +280,7 @@ ul{
   border-radius: 0.3rem;
   width: 100%;
 }
-.cards{
+.cards-details{
   color: #000;
   padding: 0.5rem 0;
 }
