@@ -5,22 +5,32 @@
 // toggler for user profile
 const userProfileMenu = document.querySelector("#profile-menu");
 const userMenuPhone = document.querySelector("#menu-on-phone");
-const hamburgerMenu =document.querySelector("#hamburger-menu");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
 const profileSettings = document.querySelector("#prof-settings");
 
-// ************************************
-// **** new code for new design *******
-// ************************************
+// toggle for nav search
+const searchInputFocus = document.querySelector('#search-input');
+const siteName = document.querySelector(".nav-brand");
 
-// toggler for user profile
-userProfileMenu.addEventListener("click", () =>{
-  profileSettings.classList.toggle("toggle-user-menu")
-});
+  // ************************************
+  // **** new code for new design *******
+  // ************************************
+
+  // toggler for user profile
+  userProfileMenu.addEventListener("click", () => {
+    profileSettings.classList.toggle("toggle-user-menu")
+  });
 
 // toggle for user on Phones
-hamburgerMenu.addEventListener("click", () =>{
+hamburgerMenu.addEventListener("click", () => {
   userMenuPhone.classList.toggle("toggle-user-menu")
 });
+
+// toggle for nav search
+searchInputFocus.addEventListener("click", () =>{
+  siteName.classList.toggle("nav-brand-hidden")
+});
+
 // // Cartigory menu
 // const menu = document.querySelector('.cartigory-list-menu button');
 // const cartigoryListWrapper = document.querySelector('.cartigory-list-wrapper');
