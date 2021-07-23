@@ -7,12 +7,18 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+.signup-home{
+    width: 390px;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .signup-sec{
     width: 100%;
     height: fit-content;
-    border: solid 0.1rem limegreen;
+    border: solid 0.1rem #A2DBFA;
     padding: 20px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 1rem 1rem;
 }
 .signup-header{
     display: flex;
@@ -21,9 +27,7 @@ body{
     padding: 0px;
     border-radius: 5px 5px 0 0;
     width: 100%;
-    height: 90px;
-    background:  limegreen;
-    
+    height: 90px; 
 }
 #search-inHeader{
     display: none;
@@ -48,7 +52,7 @@ body{
     width: 95%;
     margin-bottom: 20px;
     outline: none;
-    border: 0.1rem solid limegreen;
+    border: 0.1rem solid #A2DBFA;
 }
 .terms{
     width: 100%;
@@ -59,15 +63,12 @@ body{
 }
 .terms i a{
     text-decoration: none;
-    color: limegreen;
+    color: #39A2DB;
 }
 .terms i a:hover{
     text-decoration: underline;
 }
-.signup-home{
-    width: 390px;
-    margin: 1% auto;
-}
+
 .signup-button{
     width: 100%;
     text-align: center;
@@ -76,14 +77,14 @@ body{
 .signup-button button{
     width: 5rem;
     height: 1.9rem;
-    background: limegreen;
+    background: #39A2DB;
     color: #fff;
     border: none;
     border-radius: 0.3125rem;
     cursor: pointer;
 }
 .signup-button button:hover{
-    background:rgb(154, 250, 145);
+    background: #A2DBFA;
 }
 .fg-buts{
     display:flex;
@@ -95,7 +96,6 @@ body{
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    background: limegreen;
     width: 5rem;
     height: 1.9rem;
     border: none;
@@ -105,28 +105,30 @@ body{
     cursor: pointer;
 }
 .fg-buts button:hover{
-    background:rgb(154, 250, 145);
+    background:#A2DBFA;
 }
 .or{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
+    position: relative;
     text-align: center;
-    color: limegreen;
+    color: #39A2DB;
 }
 .or p{
-    
-   margin-top: -31px;
     width: 30px;
+    position: relative;
+    left: 157px;
+    top: 20px;
     background: #fff;
 }
-.or hr{
-    width: 100%;
-    margin: 5%;
+hr{ 
+    position: absolute;
+    top: 29px;
+    right: 53px;
+    margin: 0;
+    width: 70%;
+    border-style: solid none none;
+
 }
+
 .login{
     width: 100%;
     text-align: center;
@@ -137,7 +139,7 @@ body{
 }
 .login p a{
     text-decoration: none;
-    color: limegreen;
+    color: #39A2DB;
 }
 .login p a:hover{
     text-decoration: underline;

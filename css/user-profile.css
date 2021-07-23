@@ -1,0 +1,104 @@
+
+.prof-pg{
+    margin: 4rem 15rem 0;
+    text-align: left;
+}
+.prof-hd{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+.prof-img{
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.prof-form{
+    text-align: left;
+    
+}
+.prof-name{
+    margin-bottom: 30px;
+}
+.box{
+    margin-left: 5px;
+    width: 50%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    border: 0.1rem #39A2DB solid;
+    outline: none;
+}
+.box-e{
+    margin-left: 8px;
+    width: 50%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    border: 0.1rem #39A2DB solid;
+    outline: none;
+}
+.box-un{
+    margin-left: 8px;
+    width: 46%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    border: 0.1rem #39A2DB solid;
+    outline: none;
+}
+.box:focus, .box-e:focus, .box-un:focus{
+    border: 0.1rem #053742 solid;
+}
+.prof-email{
+    margin-bottom: 30px;
+}
+.prof-un{
+    margin-bottom: 30px;
+}
+
+.prof-fp{
+    margin-top: 3rem;
+    text-align: center;
+}
+.prof-fp a{ 
+    text-decoration: none;
+    color: #39A2DB;  
+}
+.prof-fp:hover{
+    text-decoration: underline;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width:700px){
+    .prof-pg{
+        margin: 30px 0px 20px 0px ;       
+        border-radius: 5px;
+        height: 35rem;
+    }
+    .prof-hd{
+        width: 40%;
+    }
+    .prof, .prof-hd{
+        padding: 10px;
+    }
+    .prof-form{
+        width: 100%;
+        text-align: left;
+    }
+    .box, .box-e, .box-un{
+        width: 22rem;
+        margin-left: 0;
+    }
+    .prof-fp{
+        margin-top: 3rem;
+        text-align: center;
+    }
+    
+  
+}
