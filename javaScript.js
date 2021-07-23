@@ -1,35 +1,30 @@
-// ************************************
-// **** new code for new design *******
-// ************************************
 
 // toggler for user profile
 const userProfileMenu = document.querySelector("#profile-menu");
 const userMenuPhone = document.querySelector("#menu-on-phone");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const profileSettings = document.querySelector("#prof-settings");
+const closeIcon = document.querySelector("#close-menu-icon");
 
-// toggle for nav search
-const searchInputFocus = document.querySelector('#search-input');
-const siteName = document.querySelector(".nav-brand");
-
-  // ************************************
-  // **** new code for new design *******
-  // ************************************
-
-  // toggler for user profile
-  userProfileMenu.addEventListener("click", () => {
-    profileSettings.classList.toggle("toggle-user-menu")
-  });
+// toggler for user profile on widescreen
+userProfileMenu.addEventListener("click", () => {
+  profileSettings.classList.toggle("toggle-user-menu")
+});
 
 // toggle for user on Phones
-hamburgerMenu.addEventListener("click", () => {
-  userMenuPhone.classList.toggle("toggle-user-menu")
+hamburgerMenu.addEventListener("click", () =>{
+  menuToggler();
+});
+closeIcon.addEventListener("click", () =>{
+  menuToggler();
 });
 
-// toggle for nav search
-searchInputFocus.addEventListener("click", () =>{
-  siteName.classList.toggle("nav-brand-hidden")
-});
+// function for menu on mobile Phones
+function menuToggler() {
+  userMenuPhone.classList.toggle("toggle-user-menu");
+  closeIcon.classList.toggle("close-icon-show")
+  hamburgerMenu.classList.toggle("hamburger-hidden")
+};
 
 // // Cartigory menu
 // const menu = document.querySelector('.cartigory-list-menu button');
