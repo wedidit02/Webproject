@@ -52,7 +52,11 @@ ul {
   background: var(--color-btn);
 }
 
-/* Button class for all */
+/* class for all pages */
+.width-h {
+  width: 100%;
+}
+
 .btn {
   border-radius: 0.3rem;
   background-color: transparent;
@@ -271,7 +275,7 @@ ul {
   font-weight: 400;
 }
 
-.wrapper-login-phones{
+.wrapper-login-phones {
   margin-left: auto;
   padding-right: 1.5rem;
 }
