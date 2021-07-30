@@ -11,38 +11,27 @@
     <title>Signup</title>   
 </head>
 <body>
-  <div class="site-header">
-    <div class="logo">
-      <a href="index.html">
-        <img class="logo-img" src="logo/logo1.png" alt="logo">
-      </a>
-      
-    </div>
-    <div class="site-name">
-      name of site
-    </div>
-    <div id="search-inHeader"></div>
-    <nav>
-        <ul class="nav-links">
-            <li><a class="nav-link" href="#">Home</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
-            <li><a class="nav-link" href="#">About</a></li>
-        </ul>
+  <!-- navigation bar -->
+  <section id="title">
+    <nav class="navbar color-navbar">
+      <!-- site name -->
+      <a class="nav-brand" href="index.html">site name</a>
     </nav>
-  </div> 
+  </section>
+<!-- Form start-->
   <div class="signup-home">
-    <main  class="signup-header">
+    <main  class="signup-header color-navbar">
       <div>Sign Up</div>
     </main>
     <div class="signup-sec">
       <form action="#">
         <div class="input-sec">
           <div>Name<small style="color:red">*</small></div>
-          <input type="name" class="boxes Name" placeholder="Enter your full name" required>
+          <input type="name" class="boxes" placeholder="Enter your full name" required>
           <div>Username</div>
           <input type="username" class="boxes" placeholder="Enter a username" autocomplete="username">
           <div>Email<small style="color:red">*</small></div>
-          <input type="email" class="boxes Email" placeholder="eg@service.com" required autocomplete="email">
+          <input type="email" class="boxes" placeholder="eg@service.com" required autocomplete="email">
           <div>Password<small style="color:red">*</small></div>
           <input id="password" type="password" class="boxes" placeholder="Enter a strong password" minlength="6" required autocomplete="new-password">
           <div>Confirm Password<small style="color:red">*</small></div>
@@ -65,15 +54,15 @@
         <p>OR</p>
       </div>
       <div class="fg-buts">
-        <button type="button">Google</button>
-        <button type="button">Facebook</button>
+        <button class="color-navbar" type="button">Google</button>
+        <button class="color-navbar" type="button">Facebook</button>
       </div>
       <div class="login"> 
-        <p >Already have an account? <a href="index.html">Login</a></p>
+        <p >Already have an account? <a href="login.html">Login</a></p>
       </div>
     </div> 
   </div>
-  <footer>
+  <footer class="color-navbar">
     <span>i'm here</span>
   </footer>
   <script src="./javaScript.js"></script>
